@@ -50,6 +50,7 @@ class Employment extends Component {
 
     return (
       <section className="Employment">
+        <h2>Employment</h2>
         <ol>
           {employmentNode}
         </ol>

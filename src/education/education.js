@@ -26,6 +26,7 @@ class Education extends Component {
 
     return (
       <section className="Education">
+        <h2>Education</h2>
         <ol>
           {educationNode}
         </ol>
