@@ -3,7 +3,7 @@ import './employment.scss';
 
 class Emplyoment extends Component {
   render() {
-    return <div>Emplyoment yo.</div>;
+    return <div className="Employment">Emplyoment yo.</div>;
   }
 }
 

@@ -3,7 +3,7 @@ import './skills.scss';
 
 class Skills extends Component {
   render() {
-    return <div>Skills yo.</div>;
+    return <div className='Skills'>Skills yo.</div>;
   }
 }
 

@@ -3,7 +3,7 @@ import './summary.scss';
 
 class Summary extends Component {
   render() {
-    return <div>Summary yo.</div>;
+    return <div className="Summary">Summary yo.</div>;
   }
 }
 

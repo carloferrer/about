@@ -3,7 +3,7 @@ import './projects.scss';
 
 class Projects extends Component {
   render() {
-    return <div>Projects yo.</div>;
+    return <div className="Projects">Projects yo.</div>;
   }
 }
 
