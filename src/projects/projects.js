@@ -17,7 +17,7 @@ class Projects extends Component {
       {
         name: 'TUNER.',
         tech: ['Spotify API', 'React', 'Express', 'SASS', 'Knex.js', 'PostgreSQL'],
-        description: 'Lighthouse Labs final project, developed in a team of 4.  A social medium that analyzes musical compatibility between Spotify users based on their Spotify profile data.  From these analyses, Spotcheck will provide suggestions for new music in a way that encourages users to get to know each other better.',
+        description: 'A social medium that analyzes musical compatibility between Spotify users based on their Spotify profile data.  From these analyses, Spotcheck will provide suggestions for new music in a way that encourages users to get to know each other better.',
       }
     ];
 
