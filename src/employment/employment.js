@@ -44,8 +44,8 @@ class Employment extends Component {
         <h5>{employment.location}</h5>
         <h5>{employment.dateStart} to {employment.dateEnd}</h5>
         <h4>{employment.position}</h4>
-        <p>{employment.duties}</p>
       </hgroup>
+      <p>{employment.duties}</p>
     </li>);
 
     return (
