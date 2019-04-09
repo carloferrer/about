@@ -5,7 +5,7 @@ class Projects extends Component {
   render() {
     const projectsList = [
       {
-        name: 'about_me',
+        name: 'about',
         tech: ['React', 'SCSS', 'gh-pages'],
         description: 'A more creative and robust take on my own resume.',
       },
