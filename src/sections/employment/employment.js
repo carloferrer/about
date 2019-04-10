@@ -1,44 +1,18 @@
 import React, { Component } from 'react';
+import content from '../../content';
 import './employment.scss';
 
 class Employment extends Component {
-  render() {
-    const employmentList = [
-      {
-        employer: 'GroupBy Inc.',
-        position: 'StoreFront Developer',
-        location: 'Toronto, ON',
-        dateStart: 'Feb 2019',
-        dateEnd: 'Apr 2019',
-        duties: 'StoreFront development and stuff I guess.',
-      },
-      {
-        employer: 'GroupBy Inc.',
-        position: 'Front End Consultant',
-        location: 'Toronto, ON',
-        dateStart: 'Nov 2017',
-        dateEnd: 'Feb 2019',
-        duties: 'Front end stuff.',
-      },
-      {
-        employer: 'Consolidated Energy Solutions Inc.',
-        position: 'Design Engineer (EIT)',
-        location: 'Toronto, ON',
-        dateStart: 'Jul 2017',
-        dateEnd: 'Sep 2015',
-        duties: 'HVAC systems design and whatnot.',
-      },
-      {
-        employer: 'GE-Hitachi Nuclear Energy Canada Inc.',
-        position: 'Mechanical Engineering Intern',
-        location: 'Peterborough, ON',
-        dateStart: 'May 2013',
-        dateEnd: 'Aug 2014',
-        duties: 'Mechanical design and analysis for nuclear stuff.',
-      }
-    ];
+  constructor() {
+    super();
 
-    const employmentNode = employmentList.map((employment) => <li>
+    this.state = {
+      employment: content.employment,
+    };
+  }
+
+  render() {
+    const employmentItems = this.state.employment.map((employment) => <li>
       <hgroup>
         <h3>{employment.employer}</h3>
         <h5>{employment.location}</h5>
@@ -51,9 +25,7 @@ class Employment extends Component {
     return (
       <section className="Employment">
         <h2>Employment</h2>
-        <ol>
-          {employmentNode}
-        </ol>
+        <ol>{employmentItems}</ol>
       </section>
     );
   }
