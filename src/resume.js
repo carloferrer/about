@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Contact from './contact/contact';
+import Header from './header/header';
 import Summary from './summary/summary';
 import Skills from './skills/skills';
 import Employment from './employment/employment';
@@ -11,7 +11,7 @@ class Resume extends Component {
   render() {
     return (
       <div className="Resume">
-        <Contact/>
+        <Header/>
         <Summary/>
         <Skills/>
         <Employment/>
