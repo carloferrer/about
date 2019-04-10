@@ -1,24 +1,22 @@
 import React, { Component } from 'react';
+import content from '../../content';
 import './contact.scss';
 
 class Contact extends Component {
-  render() {
-    const contactInfo = {
-      email: 'thecarloferrer@gmail.com',
-      phone: '647 331 6441',
-      linkedin: 'ca.linkedin.com/in/carloferrer',
-      github: 'github.com/carloferrer',
-      location: 'Toronto, ON (Downtown)',
+  constructor() {
+    super();
+    this.state = {
+      contact: content.contact,
     };
+  }
 
-    const contactNode = Object.values(contactInfo).map((info) => <li>{info}</li>);
+  render() {
+    const contactItems = Object.values(this.state.contact).map((info) => <li>{info}</li>);
 
     return (
       <address className="Contact">
         <h2>Contact Information</h2>
-        <ul>
-          {contactNode}
-        </ul>
+        <ul>{contactItems}</ul>
       </address>
     );
   }
