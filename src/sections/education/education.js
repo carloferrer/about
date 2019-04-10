@@ -1,22 +1,17 @@
 import React, { Component } from 'react';
+import content from '../../content';
 import './education.scss';
 
 class Education extends Component {
-  render() {
-    const educationList = [
-      {
-        institution: 'Lighthouse Labs',
-        discipline: 'Web Development Bootcamp',
-        graduationYear: '2017',
-      },
-      {
-        institution: "Queen's University",
-        discipline: 'Mechanical Engineering',
-        graduationYear: '2015',
-      },
-    ];
+  constructor() {
+    super();
+    this.state = {
+      education: content.education,
+    };
+  }
 
-    const educationNode = educationList.map((education) => <li>
+  render() {
+    const educationItems = this.state.education.map((education) => <li>
       <hgroup>
         <h3>{education.institution}</h3>
         <h4>{education.discipline}</h4>
@@ -27,9 +22,7 @@ class Education extends Component {
     return (
       <section className="Education">
         <h2>Education</h2>
-        <ol>
-          {educationNode}
-        </ol>
+        <ol>{educationItems}</ol>
       </section>
     );
   }
