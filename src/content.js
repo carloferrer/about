@@ -1,4 +1,4 @@
-const title = {
+const header = {
   name: 'Carlo Ferrer',
   title: 'Full Stack Developer',
 };
@@ -92,7 +92,7 @@ const projects = [
 ];
 
 export default {
-  title,
+  header,
   contact,
   summary,
   skills,
