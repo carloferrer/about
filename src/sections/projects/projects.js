@@ -1,32 +1,23 @@
 import React, { Component } from 'react';
+import content from '../../content';
 import './projects.scss';
 
 class Projects extends Component {
-  render() {
-    const projectsList = [
-      {
-        name: 'about',
-        tech: ['React', 'SCSS', 'gh-pages'],
-        description: 'A more creative and robust take on my own resume.',
-      },
-      {
-        name: 'fast_tracker',
-        tech: ['mongoDB', 'Node.js', 'Express', 'Bash'],
-        description: 'A tool for conveniently keeping track of your day, utilized via the command line.',
-      },
-      {
-        name: 'TUNER.',
-        tech: ['Spotify API', 'React', 'Express', 'SASS', 'Knex.js', 'PostgreSQL'],
-        description: 'A social medium that analyzes musical compatibility between Spotify users based on their Spotify profile data.  From these analyses, Spotcheck will provide suggestions for new music in a way that encourages users to get to know each other better.',
-      }
-    ];
+  constructor() {
+    super();
 
-    const projectsNode = projectsList.map((project) => {
-      const techList = project.tech.map((tech) => <li>{tech}</li>);
+    this.state = {
+      projects: content.projects,
+    };
+  }
+
+  render() {
+    const projectsItems = this.state.projects.map((project) => {
+      const techItems = project.tech.map((tech) => <li>{tech}</li>);
 
       return <li>
         <h3>{project.name}</h3>
-        <ul>{techList}</ul>
+        <ul>{techItems}</ul>
         <p>{project.description}</p>
       </li>
     });
@@ -34,9 +25,7 @@ class Projects extends Component {
     return (
       <section className="Projects">
         <h2>Projects</h2>
-        <ol>
-          {projectsNode}
-        </ol>
+        <ol>{projectsItems}</ol>
       </section>
     );
   }
