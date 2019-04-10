@@ -1,22 +1,17 @@
 import React, { Component } from 'react';
-import Header from './header/header';
-import Summary from './summary/summary';
-import Skills from './skills/skills';
-import Employment from './employment/employment';
-import Education from './education/education';
-import Projects from './projects/projects';
+import Section from './sections';
 import './resume.scss';
 
 class Resume extends Component {
   render() {
     return (
       <div className="Resume">
-        <Header/>
-        <Summary/>
-        <Skills/>
-        <Employment/>
-        <Education/>
-        <Projects/>
+        <Section.Header/>
+        <Section.Summary/>
+        <Section.Skills/>
+        <Section.Employment/>
+        <Section.Education/>
+        <Section.Projects/>
       </div>
     );
   }
