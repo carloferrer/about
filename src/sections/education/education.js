@@ -5,6 +5,7 @@ import './education.scss';
 class Education extends Component {
   constructor() {
     super();
+
     this.state = {
       education: content.education,
     };

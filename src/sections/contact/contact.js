@@ -5,6 +5,7 @@ import './contact.scss';
 class Contact extends Component {
   constructor() {
     super();
+
     this.state = {
       contact: content.contact,
     };
