@@ -3,15 +3,21 @@ import './contact.scss';
 
 class Contact extends Component {
   render() {
+    const contactInfo = {
+      email: 'thecarloferrer@gmail.com',
+      phone: '647 331 6441',
+      linkedin: 'ca.linkedin.com/in/carloferrer',
+      github: 'github.com/carloferrer',
+      location: 'Toronto, ON (Downtown)',
+    };
+
+    const contactNode = Object.values(contactInfo).map((info) => <li>{info}</li>);
+
     return (
       <address className="Contact">
         <h2>Contact Information</h2>
         <ul>
-          <li>thecarloferrer@gmail.com</li>
-          <li>647 331 6441</li>
-          <li>ca.linkedin.com/in/carloferrer</li>
-          <li>github.com/carloferrer</li>
-          <li>Toronto, ON (Downtown)</li>
+          {contactNode}
         </ul>
       </address>
     );
