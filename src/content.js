@@ -91,7 +91,7 @@ const projects = [
   }
 ];
 
-const content = {
+export default {
   title,
   contact,
   summary,
@@ -100,5 +100,3 @@ const content = {
   education,
   projects,
 };
-
-export default content;
