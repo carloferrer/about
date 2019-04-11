@@ -4,8 +4,8 @@
   text-align: center;
 
   .name {
-    font-size: $size-name;
     font-weight: 100;
+    font-size: $size-name;
 
     .first {
       font-style: normal;
@@ -19,5 +19,6 @@
 
   .title {
     font-weight: 100;
+    font-size: $size-header;
   }
 }
