@@ -18,3 +18,9 @@ $size-h1: 13pt;
 $size-h2: 12pt;
 
 $size-normal: 9pt;
+
+%header-common {
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+}
