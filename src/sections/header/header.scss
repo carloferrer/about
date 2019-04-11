@@ -1,11 +1,16 @@
+@import '../../global';
+
 .Header {
-  background: #a6ddca;
-  color: black;
   text-align: center;
 
   .name {
     .first {
       font-style: normal;
+      color: $cyan-1;
+    }
+
+    .last {
+      color: $gray-0;
     }
   }
 }
