@@ -1,18 +1,9 @@
 import React, { Component } from 'react';
-import content from '../../content';
 import './employment.scss';
 
 class Employment extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      employment: content.employment,
-    };
-  }
-
   render() {
-    const employmentItems = this.state.employment.map((employment) => <li>
+    const employmentItems = this.props.content.employment.map((employment) => <li>
       <hgroup>
         <h3>{employment.employer}</h3>
         <h5>{employment.location}</h5>
