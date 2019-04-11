@@ -1,11 +1,9 @@
 @import '../../global';
 
 .Employment {
-  background: $white;
-
   .header {
-    text-transform: uppercase;
-    text-align: center;
+    @extend %header-common;
+    font-size: $size-header;
     color: $cyan-1;
   }
 }

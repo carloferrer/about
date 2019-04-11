@@ -1,12 +1,9 @@
 @import '../../global';
 
 .Projects {
-  background: $white;
-
   .header {
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 100;
+    @extend %header-common;
+    font-size: $size-header;
     color: $cyan-1;
   }
 }
