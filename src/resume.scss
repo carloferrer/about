@@ -1,17 +1,20 @@
 @import 'global';
 
 .Resume {
-  display: flex;
-  flex-direction: column;
+  .desktop {
+    display: none;
+  }
 
   .list {
     list-style: none;
   }
 
   @media (min-width: $mobile-width) {
-    flex-direction: row;
+    .desktop {
+      display: flex;
 
-    .desktop-left { flex: 2; }
-    .desktop-right { flex: 1; }
+      .left { flex: 2; }
+      .right { flex: 1; }
+    }
   }
 }
