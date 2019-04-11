@@ -1,31 +1,22 @@
 import React, { Component } from 'react';
-import content from '../../content';
 import './projects.scss';
 
 class Projects extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      projects: content.projects,
-    };
-  }
-
   render() {
-    const projectsItems = this.state.projects.map((project) => {
-      const techItems = project.tech.map((tech) => <li>{tech}</li>);
+    const projectsItems = this.props.content.projects.map((project, parentIndex) => {
+      const techItems = project.tech.map((tech, childIndex) => <li key={ `projectChild_${ childIndex }` }>{tech}</li>);
 
-      return <li>
-        <h3>{project.name}</h3>
-        <ul>{techItems}</ul>
-        <p>{project.description}</p>
+      return <li key={ `projectParent_${ parentIndex }` }>
+        <h3>{ project.name }</h3>
+        <ul>{ techItems }</ul>
+        <p>{ project.description }</p>
       </li>
     });
 
     return (
       <section className="Projects">
         <h2>Projects</h2>
-        <ol>{projectsItems}</ol>
+        <ol>{ projectsItems }</ol>
       </section>
     );
   }

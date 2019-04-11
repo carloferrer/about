@@ -1,30 +1,23 @@
 import React, { Component } from 'react';
-import content from '../../content';
 import './skills.scss';
 
 class Skills extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      skills: content.skills,
-    };
-  }
-
   render() {
-    const skillsItems = Object.keys(this.state.skills).map((listTitle) => {
-      const list = this.state.skills[listTitle].map((item) => <li>{item}</li>);
+    const { skills } = this.props.content;
 
-      return <li>
-        <h3>{listTitle}</h3>
-        <ul>{list}</ul>
+    const skillsItems = Object.keys(skills).map((listTitle, parentIndex) => {
+      const list = skills[listTitle].map((item, childIndex) => <li key={ `skillChild_${ childIndex }` }>{item}</li>);
+
+      return <li key={ `skillParent_${ parentIndex }` }>
+        <h3>{ listTitle }</h3>
+        <ul>{ list }</ul>
       </li>
     });
 
     return (
       <section className='Skills'>
         <h2>Skills</h2>
-        <ul>{skillsItems}</ul>
+        <ul>{ skillsItems }</ul>
       </section>
     );
   }
