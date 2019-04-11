@@ -7,13 +7,17 @@ class Resume extends Component {
   render() {
     return (
       <main className="Resume">
-        <Section.Header content={ content }/>
-        <Section.Contact content={ content }/>
-        <Section.Summary content={ content }/>
-        <Section.Skills content={ content }/>
-        <Section.Employment content={ content }/>
-        <Section.Education content={ content }/>
-        <Section.Projects content={ content }/>
+        <div className="desktop-left">
+          <Section.Header content={ content }/>
+          <Section.Employment content={ content }/>
+          <Section.Projects content={ content }/>
+        </div>
+        <div className="desktop-right">
+          <Section.Contact content={ content }/>
+          <Section.Summary content={ content }/>
+          <Section.Education content={ content }/>
+          <Section.Skills content={ content }/>
+        </div>
       </main>
     );
   }
