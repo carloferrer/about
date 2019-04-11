@@ -1,10 +1,8 @@
 @import '../../global';
 
 .Header {
-  text-align: center;
-
   .name {
-    font-weight: 100;
+    @extend %header-common;
     font-size: $size-name;
 
     .first {
@@ -18,7 +16,7 @@
   }
 
   .title {
-    font-weight: 100;
+    @extend %header-common;
     font-size: $size-header;
   }
 }
