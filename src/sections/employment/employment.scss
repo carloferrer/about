@@ -6,4 +6,29 @@
     font-size: $size-header;
     color: $cyan-1;
   }
+
+  .item {
+    hgroup {
+      position: relative;
+
+      .position {
+        font-size: $size-h0;
+      }
+
+      .employer {
+        font-size: $size-h1;
+        color: $gray-1;
+      }
+
+      .dates {
+        position: absolute;
+        top: -19%;
+        right: 5%;
+      }
+    }
+
+    .duties {
+      font-size: $size-normal;
+    }
+  }
 }
