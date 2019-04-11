@@ -59,7 +59,7 @@ const employment = [
   },
   {
     employer: 'GE-Hitachi Nuclear Energy Canada Inc.',
-    position: 'Mechanical Engineering Intern',
+    position: 'Engineering Intern',
     location: 'Peterborough, ON',
     dateStart: 'May 2013',
     dateEnd: 'Aug 2014',
