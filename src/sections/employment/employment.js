@@ -3,7 +3,7 @@ import './employment.scss';
 
 class Employment extends Component {
   render() {
-    const employmentItems = this.props.content.employment.map((employment) => <li>
+    const employmentItems = this.props.content.employment.map((employment, index) => <li key={`employment_${index}`}>
       <hgroup>
         <h3>{employment.employer}</h3>
         <h5>{employment.location}</h5>
