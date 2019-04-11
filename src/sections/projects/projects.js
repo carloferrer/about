@@ -1,18 +1,9 @@
 import React, { Component } from 'react';
-import content from '../../content';
 import './projects.scss';
 
 class Projects extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      projects: content.projects,
-    };
-  }
-
   render() {
-    const projectsItems = this.state.projects.map((project) => {
+    const projectsItems = this.props.content.projects.map((project) => {
       const techItems = project.tech.map((tech) => <li>{tech}</li>);
 
       return <li>
