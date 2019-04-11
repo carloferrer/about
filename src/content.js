@@ -32,7 +32,7 @@ const employment = [
     location: 'Toronto, ON',
     dateStart: 'Feb 2019',
     dateEnd: 'Apr 2019',
-    duties: 'StoreFront development and stuff I guess.',
+    duties: ['StoreFront development and stuff I guess.'],
   },
   {
     employer: 'GroupBy Inc.',
@@ -40,7 +40,7 @@ const employment = [
     location: 'Toronto, ON',
     dateStart: 'Nov 2017',
     dateEnd: 'Feb 2019',
-    duties: 'Front end stuff.',
+    duties: ['Front end stuff.'],
   },
   {
     employer: 'Consolidated Energy Solutions Inc.',
@@ -48,7 +48,7 @@ const employment = [
     location: 'Toronto, ON',
     dateStart: 'Jul 2017',
     dateEnd: 'Sep 2015',
-    duties: 'HVAC systems design and whatnot.',
+    duties: ['HVAC systems design and whatnot.'],
   },
   {
     employer: 'GE-Hitachi Nuclear Energy Canada Inc.',
@@ -56,7 +56,7 @@ const employment = [
     location: 'Peterborough, ON',
     dateStart: 'May 2013',
     dateEnd: 'Aug 2014',
-    duties: 'Mechanical design and analysis for nuclear stuff.',
+    duties: ['Mechanical design and analysis for nuclear stuff.'],
   }
 ];
 
