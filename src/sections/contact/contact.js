@@ -3,7 +3,7 @@ import './contact.scss';
 
 class Contact extends Component {
   render() {
-    const contactItems = Object.values(this.props.content.contact).map((info) => <li>{info}</li>);
+    const contactItems = Object.values(this.props.content.contact).map((info, index) => <li key={`contact_${index}`}>{info}</li>);
 
     return (
       <address className="Contact">
