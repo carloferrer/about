@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Contact from '../contact/contact';
 import './header.scss';
 
 class Header extends Component {
@@ -10,7 +9,6 @@ class Header extends Component {
       <header className="Header">
         <h1 className="name">{ name }</h1>
         <h2 className="title">{ title }</h2>
-        <Contact content={ this.props.content }/>
       </header>
     );
   }

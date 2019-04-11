@@ -8,6 +8,7 @@ class Resume extends Component {
     return (
       <main className="Resume">
         <Section.Header content={ content }/>
+        <Section.Contact content={ content }/>
         <Section.Summary content={ content }/>
         <Section.Skills content={ content }/>
         <Section.Employment content={ content }/>
