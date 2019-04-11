@@ -1,23 +1,16 @@
 import React, { Component } from 'react';
-import content from '../../content';
 import Contact from '../contact/contact';
 import './header.scss';
 
 class Header extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      header: content.header,
-    };
-  }
-
   render() {
+    const { name, title } = this.props.content.header;
+
     return (
       <header className="Header">
-        <h1>{this.state.header.name}</h1>
-        <h2>{this.state.header.title}</h2>
-        <Contact/>
+        <h1>{name}</h1>
+        <h2>{title}</h2>
+        <Contact content={this.props.content}/>
       </header>
     );
   }
