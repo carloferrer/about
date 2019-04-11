@@ -2,5 +2,10 @@
 
 .Employment {
   background: $white;
-  font: $black;
+
+  .header {
+    text-transform: uppercase;
+    text-align: center;
+    color: $cyan-1;
+  }
 }

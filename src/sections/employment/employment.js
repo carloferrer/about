@@ -19,7 +19,7 @@ class Employment extends Component {
 
     return (
       <section className="Employment">
-        <h2 className="header">Employment</h2>
+        <h2 className="header">Experience</h2>
         <ol className="list">{ employmentItems }</ol>
       </section>
     );

@@ -4,6 +4,9 @@
   text-align: center;
 
   .name {
+    font-size: 250%;
+    font-weight: 100;
+
     .first {
       font-style: normal;
       color: $cyan-1;
@@ -12,5 +15,9 @@
     .last {
       color: $gray-0;
     }
+  }
+
+  .title {
+    font-weight: 100;
   }
 }
