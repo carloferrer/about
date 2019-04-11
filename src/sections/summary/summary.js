@@ -7,8 +7,8 @@ class Summary extends Component {
 
     return (
       <section className="Summary">
-        <h2>Summary</h2>
-        <blockquote>{ summaryItems }</blockquote>
+        <h2 className="header">Summary</h2>
+        <blockquote className="content">{ summaryItems }</blockquote>
       </section>
     );
   }
