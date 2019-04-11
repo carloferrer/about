@@ -28,11 +28,11 @@ const skills = {
 const employment = [
   {
     employer: 'GroupBy Inc.',
-    position: 'StoreFront Developer',
+    position: 'Software Engineer (EIT)',
     location: 'Toronto, ON',
     dateStart: 'Feb 2019',
     dateEnd: 'Apr 2019',
-    duties: ['StoreFront development and stuff I guess.'],
+    duties: ['Development (via test driven development) and maintenance of StoreFront, an e-commerce UI component library that is fully integrated with the GroupBy ecosystem/services.'],
   },
   {
     employer: 'GroupBy Inc.',
@@ -40,7 +40,7 @@ const employment = [
     location: 'Toronto, ON',
     dateStart: 'Nov 2017',
     dateEnd: 'Feb 2019',
-    duties: ['Front end stuff.'],
+    duties: ['Development and maintenance of the retail experience for an American corporation in the top 10 of the Fortune 500.', 'Resident expert in the implementation of their user-analytics tracking and loyalty program.', 'Acting team lead and technical consultant for the loyalty program team; I managed multiple developers as well as the relationship between the client GroupBy'],
   },
   {
     employer: 'Consolidated Energy Solutions Inc.',
@@ -48,7 +48,7 @@ const employment = [
     location: 'Toronto, ON',
     dateStart: 'Jul 2017',
     dateEnd: 'Sep 2015',
-    duties: ['HVAC systems design and whatnot.'],
+    duties: ['Mechanical design and analysis of HVAC systems for large grocery chains.'],
   },
   {
     employer: 'GE-Hitachi Nuclear Energy Canada Inc.',
@@ -56,7 +56,7 @@ const employment = [
     location: 'Peterborough, ON',
     dateStart: 'May 2013',
     dateEnd: 'Aug 2014',
-    duties: ['Mechanical design and analysis for nuclear stuff.'],
+    duties: ['Mechanical design and analysis for various equipment in operation at the OPG Darlington the Bruce Power Nuclear Generating Stations.'],
   }
 ];
 
