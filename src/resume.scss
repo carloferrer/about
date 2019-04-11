@@ -9,15 +9,20 @@
 
   .list {
     list-style: none;
+    padding-left: 0;
   }
 
   @media (min-width: $mobile-width) {
     .desktop {
       display: flex;
 
-      .left { flex: 2; }
+      .left {
+        flex: 5;
+        margin: 0 5% 0 5%;
+      }
+
       .right {
-        flex: 1;
+        flex: 3;
         background: $cyan-0;
         color: $white;
       }
