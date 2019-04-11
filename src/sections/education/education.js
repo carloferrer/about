@@ -3,18 +3,18 @@ import './education.scss';
 
 class Education extends Component {
   render() {
-    const educationItems = this.props.content.education.map((education, index) => <li key={`education_${index}`}>
+    const educationItems = this.props.content.education.map((education, index) => <li key={ `education_${ index }` }>
       <hgroup>
-        <h3>{education.institution}</h3>
-        <h4>{education.discipline}</h4>
-        <h5>{education.graduationYear}</h5>
+        <h3>{ education.institution }</h3>
+        <h4>{ education.discipline }</h4>
+        <h5>{ education.graduationYear }</h5>
       </hgroup>
     </li>);
 
     return (
       <section className="Education">
         <h2>Education</h2>
-        <ol>{educationItems}</ol>
+        <ol>{ educationItems }</ol>
       </section>
     );
   }

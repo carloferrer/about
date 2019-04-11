@@ -8,9 +8,9 @@ class Header extends Component {
 
     return (
       <header className="Header">
-        <h1>{name}</h1>
-        <h2>{title}</h2>
-        <Contact content={this.props.content}/>
+        <h1>{ name }</h1>
+        <h2>{ title }</h2>
+        <Contact content={ this.props.content }/>
       </header>
     );
   }

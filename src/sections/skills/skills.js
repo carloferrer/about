@@ -6,18 +6,18 @@ class Skills extends Component {
     const { skills } = this.props.content;
 
     const skillsItems = Object.keys(skills).map((listTitle, parentIndex) => {
-      const list = skills[listTitle].map((item, childIndex) => <li key={`skillChild_${childIndex}`}>{item}</li>);
+      const list = skills[listTitle].map((item, childIndex) => <li key={ `skillChild_${ childIndex }` }>{item}</li>);
 
-      return <li key={`skillParent_${parentIndex}`}>
-        <h3>{listTitle}</h3>
-        <ul>{list}</ul>
+      return <li key={ `skillParent_${ parentIndex }` }>
+        <h3>{ listTitle }</h3>
+        <ul>{ list }</ul>
       </li>
     });
 
     return (
       <section className='Skills'>
         <h2>Skills</h2>
-        <ul>{skillsItems}</ul>
+        <ul>{ skillsItems }</ul>
       </section>
     );
   }
