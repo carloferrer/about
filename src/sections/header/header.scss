@@ -1,4 +1,11 @@
 .Header {
   background: #a6ddca;
   color: black;
+  text-align: center;
+
+  .name {
+    .first {
+      font-style: normal;
+    }
+  }
 }

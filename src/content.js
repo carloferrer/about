@@ -1,5 +1,6 @@
 const header = {
-  name: 'Carlo Ferrer',
+  firstName: 'Carlo',
+  lastName: 'Ferrer',
   title: 'Full Stack Developer',
 };
 
