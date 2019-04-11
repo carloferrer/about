@@ -18,6 +18,7 @@ class Skills extends Component {
       <section className='Skills'>
         <h2>Skills</h2>
         <ul>{ skillsItems }</ul>
+        <footer>** Denotes "has had exposure to".</footer>
       </section>
     );
   }
