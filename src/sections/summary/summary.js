@@ -1,18 +1,9 @@
 import React, { Component } from 'react';
-import content from '../../content';
 import './summary.scss';
 
 class Summary extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      summary: content.summary,
-    };
-  }
-
   render() {
-    const summaryItems = this.state.summary.map((paragraph) => <p>{paragraph}</p>);
+    const summaryItems = this.props.content.summary.map((paragraph) => <p>{paragraph}</p>);
 
     return (
       <section className="Summary">
