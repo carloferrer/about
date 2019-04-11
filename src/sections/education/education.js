@@ -3,7 +3,7 @@ import './education.scss';
 
 class Education extends Component {
   render() {
-    const educationItems = this.props.content.education.map((education) => <li>
+    const educationItems = this.props.content.education.map((education, index) => <li key={`education_${index}`}>
       <hgroup>
         <h3>{education.institution}</h3>
         <h4>{education.discipline}</h4>
