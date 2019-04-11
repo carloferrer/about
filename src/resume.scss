@@ -1,7 +1,19 @@
 .Resume {
-  display: flex;
-
   .list {
     list-style: none;
+  }
+
+  @media (min-width: 480px) {
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+
+    .desktop-left {
+      flex: 2;
+    }
+
+    .desktop-right {
+      flex: 1;
+    }
   }
 }
