@@ -5,20 +5,20 @@ class Skills extends Component {
   render() {
     const { skills } = this.props.content;
 
-    const skillsItems = Object.keys(skills).map((listTitle, parentIndex) => {
-      const list = skills[listTitle].map((item, childIndex) => <li key={ `skillChild_${ childIndex }` }>{item}</li>);
+    const skillsItems = Object.keys(skills).map((type, parentIndex) => {
+      const typeList = skills[type].map((item, childIndex) => <li className="type-item" key={ `skillChild_${ childIndex }` }>{ item }</li>);
 
-      return <li key={ `skillParent_${ parentIndex }` }>
-        <h3>{ listTitle }</h3>
-        <ul>{ list }</ul>
+      return <li className="skill-item" key={ `skillParent_${ parentIndex }` }>
+        <h3 className="type">{ type }</h3>
+        <ul className="type-list">{ typeList }</ul>
       </li>
     });
 
     return (
       <section className='Skills'>
-        <h2>Skills</h2>
-        <ul>{ skillsItems }</ul>
-        <footer>** Denotes "has had exposure to".</footer>
+        <h2 className="header">Skills</h2>
+        <ul className="list">{ skillsItems }</ul>
+        <footer className="disclaimer">** Denotes "has had exposure to".</footer>
       </section>
     );
   }
