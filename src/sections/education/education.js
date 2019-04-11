@@ -1,18 +1,9 @@
 import React, { Component } from 'react';
-import content from '../../content';
 import './education.scss';
 
 class Education extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      education: content.education,
-    };
-  }
-
   render() {
-    const educationItems = this.state.education.map((education) => <li>
+    const educationItems = this.props.content.education.map((education) => <li>
       <hgroup>
         <h3>{education.institution}</h3>
         <h4>{education.discipline}</h4>
