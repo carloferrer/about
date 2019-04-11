@@ -6,21 +6,21 @@ class Employment extends Component {
     const employmentItems = this.props.content.employment.map((employment, parentIndex) => {
       const dutyItems = employment.duties.map((duty, childIndex) => <p key={ `employmentChild_${ childIndex }` }>{ duty }</p>);
 
-      return <li key={ `employmentParent_${ parentIndex }` }>
+      return <li className="item" key={ `employmentParent_${ parentIndex }` }>
         <hgroup>
-          <h3>{ employment.employer }</h3>
-          <h5>{ employment.location }</h5>
-          <h5>{ employment.dateStart} to { employment.dateEnd }</h5>
-          <h4>{ employment.position }</h4>
+          <h3 className="employer">{ employment.employer }</h3>
+          <h5 className="location">{ employment.location }</h5>
+          <h5 className="dates">{ employment.dateStart} to { employment.dateEnd }</h5>
+          <h4 className="position">{ employment.position }</h4>
         </hgroup>
-        <div>{ dutyItems }</div>
+        <div className="duties">{ dutyItems }</div>
       </li>
     });
 
     return (
       <section className="Employment">
-        <h2>Employment</h2>
-        <ol>{ employmentItems }</ol>
+        <h2 className="header">Employment</h2>
+        <ol className="list">{ employmentItems }</ol>
       </section>
     );
   }
