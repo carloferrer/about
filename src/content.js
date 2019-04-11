@@ -63,13 +63,13 @@ const employment = [
 const education = [
   {
     institution: 'Lighthouse Labs',
-    discipline: 'Web Development Bootcamp',
+    discipline: 'Web Development',
     graduationYear: '2017',
   },
   {
     institution: "Queen's University",
     discipline: 'Mechanical Engineering',
-    graduationYear: '2015',
+    graduationYear: '2015 (First Honours)',
   },
 ];
 
