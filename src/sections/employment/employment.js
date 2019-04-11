@@ -4,7 +4,7 @@ import './employment.scss';
 class Employment extends Component {
   render() {
     const employmentItems = this.props.content.employment.map((employment, parentIndex) => {
-      const dutyItems = employment.duties.map((duty, childIndex) => <p key={ `employmentChild_${ childIndex }` }>{duty}</p>);
+      const dutyItems = employment.duties.map((duty, childIndex) => <p key={ `employmentChild_${ childIndex }` }>{ duty }</p>);
 
       return <li key={ `employmentParent_${ parentIndex }` }>
         <hgroup>
