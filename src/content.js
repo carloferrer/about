@@ -77,17 +77,17 @@ const projects = [
   {
     name: 'about',
     tech: ['React', 'SCSS', 'gh-pages'],
-    description: 'A more creative and robust take on my own resume.',
+    description: 'A creative approach toward the distribution and viewing of my own resume.',
   },
   {
     name: 'fast_tracker',
     tech: ['mongoDB', 'Node.js', 'Express', 'Bash'],
-    description: 'A tool for conveniently keeping track of your day, utilized via the command line.',
+    description: 'An API and CLI to streamline tracking one’s tasks throughout the day.',
   },
   {
     name: 'TUNER.',
     tech: ['Spotify API', 'React', 'Express', 'SASS', 'Knex.js', 'PostgreSQL'],
-    description: 'A social medium that analyzes musical compatibility between Spotify users based on their Spotify profile data.  From these analyses, Spotcheck will provide suggestions for new music in a way that encourages users to get to know each other better.',
+    description: 'Social medium to analyze musical compatibility between users.  It can suggest new music to encourage getting to know other users.',
   }
 ];
 
