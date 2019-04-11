@@ -7,7 +7,7 @@ class Contact extends Component {
 
     return (
       <address className="Contact">
-        <h2 className="header">Contact Information</h2>
+        <h2 className="header">Details</h2>
         <ul className="list">{ contactItems }</ul>
       </address>
     );
