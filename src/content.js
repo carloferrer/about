@@ -18,12 +18,18 @@ const summary = [
 
 const skills = {
   Languages: ['JavaScript', 'HTML', 'CSS/SCSS/SASS', 'Bash', 'MATLAB', 'C', 'VBA'],
-  'Frameworks & Libraries': ['Riot.js', 'React', 'Angular', 'Express.js', 'jQuery'],
+  'Frameworks & Libraries': ['React', 'Riot', 'Node', 'Angular**', 'TypeScript**'],
   Testing: ['Mocha', 'Chai', 'Sinon'],
-  Databases: ['MongoDB', 'PostgreSQL'],
-  Workflow: ['JIRA', 'Node.js', 'MS Word', 'MS Excel', 'MS PowerPoint'],
-  'CAD Modelling': ['AutoCAD', 'Inventor', 'SOLIDWORKS', 'Solid Edge']
+  Workflow: ['Git', 'GitHub', 'JIRA', 'Google Suite', 'MS Office Suite'],
+  OS: ['macOS', 'Linux (Ubuntu)', 'Windows'],
+  'Databases** / Orchestration**': ['MongoDB', 'PostgreSQL', 'Docker', 'Kubernetes', 'GCP'],
 };
+
+// const otherSkills = {
+//   Languages: ['MATLAB', 'C', 'VBA'],
+//   'Frameworks & Libraries': ['jQuery'],
+//   'CAD Modelling': ['AutoCAD', 'Inventor', 'SOLIDWORKS', 'Solid Edge']
+// };
 
 const employment = [
   {
