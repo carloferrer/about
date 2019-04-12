@@ -53,7 +53,7 @@ $side-margins: 0 5% 0 5%;
   border-bottom: solid 1pt;
 
   @media (min-width: $mobile-width) {
-  margin: 10% 0 0 0;
+    margin: 10% 0 0 0;
     color: $cyan-1;
   }
 }
