@@ -27,6 +27,10 @@
 
   .disclaimer {
     font-size: $size-normal;
-    color: $gray-1;
+    color: $gray-2;
   }
+}
+
+.desktop .Skills .disclaimer {
+  color: $gray-1;
 }
