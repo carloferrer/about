@@ -1,4 +1,34 @@
+@import '../../global';
+
 .Projects {
-  background: #c7b7d9;
-  color: black;
+  .header {
+    @extend %header-main;
+  }
+
+  .item {
+    position: relative;
+
+    .name {
+      font-weight: 100;
+      font-size: $size-h0;
+      margin: 0 0 0 0;
+    }
+
+    .tech-list {
+      display: flex;
+      list-style: none;
+      padding-left: 0;
+      margin: 1% 0 0 0;
+      color: $gray-1;
+
+      .tech-item {
+        font-size: $size-normal;
+        margin: 0 1% 0 0;
+      }
+    }
+
+    .description {
+      font-size: $size-normal;
+    }
+  }
 }

@@ -1,14 +1,15 @@
 const header = {
-  name: 'Carlo Ferrer',
+  firstName: 'Carlo',
+  lastName: 'Ferrer',
   title: 'Full Stack Developer',
 };
 
 const contact = {
-  email: 'thecarloferrer@gmail.com',
+  location: 'Toronto, ON (Downtown)',
   phone: '647 331 6441',
+  email: 'thecarloferrer@gmail.com',
   linkedin: 'ca.linkedin.com/in/carloferrer',
   github: 'github.com/carloferrer',
-  location: 'Toronto, ON (Downtown)',
 };
 
 const summary = [
@@ -17,7 +18,7 @@ const summary = [
 ];
 
 const skills = {
-  Languages: ['JavaScript', 'HTML', 'CSS/SCSS/SASS', 'Bash', 'MATLAB', 'C', 'VBA'],
+  Languages: ['JavaScript', 'HTML', 'CSS/SASS', 'Bash'],
   'Frameworks & Libraries': ['React', 'Riot', 'Node', 'Angular**', 'TypeScript**'],
   Testing: ['Mocha', 'Chai', 'Sinon'],
   Workflow: ['Git', 'GitHub', 'JIRA', 'Google Suite', 'MS Office Suite'],
@@ -57,8 +58,8 @@ const employment = [
     duties: ['Mechanical design and analysis of HVAC systems for large grocery chains.'],
   },
   {
-    employer: 'GE-Hitachi Nuclear Energy Canada Inc.',
-    position: 'Mechanical Engineering Intern',
+    employer: 'GE Nuclear Energy Canada Inc.',
+    position: 'Engineering Intern',
     location: 'Peterborough, ON',
     dateStart: 'May 2013',
     dateEnd: 'Aug 2014',
@@ -75,7 +76,8 @@ const education = [
   {
     institution: "Queen's University",
     discipline: 'Mechanical Engineering',
-    graduationYear: '2015 (First Honours)',
+    graduationYear: '2015',
+    note: 'First Honours',
   },
 ];
 

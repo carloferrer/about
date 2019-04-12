@@ -1,4 +1,31 @@
+@import '../../global';
+
 .Skills {
-  background: #ffef94;
-  color: black;
+  .header {
+    @extend %header-aux;
+  }
+
+  .skill-item {
+    .type {
+      font-size: $size-normal;
+      margin: 10% 0 0 0;
+    }
+
+    .type-list {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 0 0 0;
+      list-style: none;
+      font-size: $size-normal;
+
+      .type-item {
+        margin: 0 4% 0 0;
+      }
+    }
+  }
+
+  .disclaimer {
+    font-size: $size-normal;
+    color: $gray-1;
+  }
 }

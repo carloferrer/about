@@ -1,0 +1,17 @@
+@import '../../global';
+
+.Contact {
+  font-style: normal;
+
+  .header {
+    @extend %header-aux;
+  }
+
+  .list {
+    font-size: $size-normal;
+
+    .item {
+      margin: 2% 0 0 0;
+    }
+  }
+}

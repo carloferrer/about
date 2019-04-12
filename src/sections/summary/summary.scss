@@ -1,4 +1,12 @@
+@import '../../global';
+
 .Summary {
-  background: #bdd689;
-  color: black;
+  .header {
+    @extend %header-aux;
+  }
+
+  .content {
+    font-size: $size-normal;
+    margin: 0 0 0 0;
+  }
 }

@@ -1,4 +1,22 @@
+@import '../../global';
+
 .Header {
-  background: #a6ddca;
-  color: black;
+  .name {
+    @extend %header-common;
+    font-size: $size-name;
+
+    .first {
+      font-style: normal;
+      color: $cyan-1;
+    }
+
+    .last {
+      color: $gray-0;
+    }
+  }
+
+  .title {
+    @extend %header-common;
+    font-size: $size-header;
+  }
 }

@@ -1,4 +1,34 @@
+@import '../../global';
+
 .Employment {
-  background: #fccb89;
-  font: black;
+  .header {
+    @extend %header-main;
+  }
+
+  .item {
+    hgroup {
+      .position {
+        font-weight: 100;
+        margin: 0 0 0 0;
+        font-size: $size-h0;
+      }
+
+      .employer {
+        font-weight: 100;
+        margin: 1% 0 0 0;
+        font-size: $size-h1;
+        color: $gray-1;
+      }
+
+      .location {
+        margin: 1% 0 0 0;
+        font-size: $size-normal;
+      }
+
+    }
+
+    .duties {
+      font-size: $size-normal;
+    }
+  }
 }
