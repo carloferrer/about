@@ -9,15 +9,15 @@
     margin: 0 0 10% 0;
 
     .institution {
-      font-weight: 100;
-      font-size: $size-h2;
       margin: 0 0 1% 0;
+      font-size: $size-h2;
+      font-weight: 100;
     }
 
     .discipline, .note {
       margin: 0 0 0 0;
-      font-weight: 100;
       font-size: $size-normal;
+      font-weight: 100;
       color: $cyan-2;
     }
   }
