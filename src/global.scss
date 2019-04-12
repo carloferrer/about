@@ -26,6 +26,7 @@ $size-normal: 10pt;
 }
 
 %header-main {
+  margin: 10% 0 0 0;
   @extend %header-common;
   font-size: $size-header;
   color: $cyan-1;
