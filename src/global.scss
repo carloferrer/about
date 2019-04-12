@@ -31,17 +31,25 @@ $side-margins: 0 5% 0 5%;
 
 %header-aux {
   @extend %header-common;
-  margin: 25% 0 0 0;
+  margin: 10% 0 0 0;
   padding: 0 0 5% 0;
-  font-size: $size-h0;
   border-bottom: solid 1pt;
+  font-size: $size-header;
+
+  @media (min-width: $mobile-width) {
+    margin: 25% 0 0 0;
+    font-size: $size-h0;
+  }
 }
 
 %header-main {
   @extend %header-common;
+  font-size: $size-header;
   margin: 10% 0 0 0;
   padding: 0 0 5% 0;
-  font-size: $size-header;
-  color: $cyan-1;
   border-bottom: solid 1pt;
+
+  @media (min-width: $mobile-width) {
+    color: $cyan-1;
+  }
 }
