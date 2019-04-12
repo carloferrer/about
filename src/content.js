@@ -47,7 +47,7 @@ const employment = [
     location: 'Toronto, ON',
     dateStart: 'Nov 2017',
     dateEnd: 'Feb 2019',
-    duties: ['Development and maintenance of the retail experience for an American corporation in the top 10 of the Fortune 500.', 'Resident expert in the implementation of their user-analytics tracking and loyalty program.', 'Acting team lead and technical consultant for the loyalty program team; I managed multiple developers as well as the relationship between the client GroupBy'],
+    duties: ['Development and maintenance of the retail experience for a corporation in the top 10 of the Fortune 500.', 'Resident expert in the implementation of their user-analytics tracking and loyalty program.', 'Acting team lead and technical consultant for the loyalty program team; I managed multiple developers as well as the relationship between the client and GroupBy.'],
   },
   {
     employer: 'Consolidated Energy Solutions Inc.',
