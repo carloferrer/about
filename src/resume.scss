@@ -1,23 +1,33 @@
 @import 'global';
 
+// Consideration for mobile by default.
+body {
+  background: $cyan-0;
+}
+
 .Resume {
   font-family: Comfortaa;
+  color: $white;
 
   .list {
     padding-left: 0;
     list-style: none;
   }
 
-  .desktop {
-    display: none;
+  .desktop { display: none; }
+
+  .mobile {
+    margin: $side-margins;
   }
 
-
   @media (min-width: $mobile-width) {
+    background: $white;
+
     .mobile { display: none; }
 
     .desktop {
       display: flex;
+      color: $black;
 
       .left {
         flex: 5;
