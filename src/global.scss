@@ -9,8 +9,6 @@ $gray-2: #ccc;
 $black: #000;
 $white: #fff;
 
-$mobile-width: 480px;
-
 $size-name: 31pt;
 $size-header: 18pt;
 
@@ -19,6 +17,10 @@ $size-h1: 13pt;
 $size-h2: 12pt;
 
 $size-normal: 10pt;
+
+$mobile-width: 480px;
+
+$side-margins: 0 5% 0 5%;
 
 %header-common {
   font-weight: 100;
