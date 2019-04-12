@@ -86,7 +86,7 @@ const projects = [
     name: 'about',
     link: 'https://github.com/carloferrer/about',
     tech: ['React', 'SCSS', 'gh-pages'],
-    description: 'A creative approach toward the distribution and viewing of my own resume.',
+    description: 'This project!  A creative approach toward the distribution and viewing of my own resume.',
   },
   {
     name: 'fast_tracker',
