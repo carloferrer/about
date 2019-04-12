@@ -16,7 +16,7 @@ class Skills extends Component {
 
     return (
       <section className='Skills'>
-        <h2 className="header">Skills</h2>
+        <h2 className="header">Proficiencies</h2>
         <ul className="list">{ skillsItems }</ul>
         <footer className="disclaimer">** Denotes "has had exposure to".</footer>
       </section>
