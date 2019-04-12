@@ -1,3 +1,13 @@
+@import '../../global';
+
 .Contact {
   font-style: normal;
+
+  .header {
+    @extend %header-common;
+  }
+
+  .list {
+    font-size: $size-normal;
+  }
 }
