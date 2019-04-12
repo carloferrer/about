@@ -13,6 +13,16 @@
       margin: 0 0 0 0;
       font-size: $size-h0;
       font-weight: 100;
+
+      a {
+        text-decoration: none;
+        color: $cyan-1;
+
+        .host {
+          font-size: $size-small;
+          color: $gray-1;
+        }
+      }
     }
 
     .tech-list {
@@ -21,7 +31,7 @@
       margin: 1% 0 0 0;
       padding-left: 0;
       white-space: nowrap;
-      color: $gray-1;
+      color: $gray-0;
 
       .tech-item {
         margin: 0 2% 0 0;

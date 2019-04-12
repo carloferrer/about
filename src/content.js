@@ -84,19 +84,16 @@ const education = [
 const projects = [
   {
     name: 'about',
-    link: 'https://github.com/carloferrer/about',
     tech: ['React', 'SCSS', 'gh-pages'],
     description: 'This project!  A creative approach toward the distribution and viewing of my own resume.',
   },
   {
     name: 'fast_tracker',
-    link: 'https://github.com/carloferrer/fast_tracker',
     tech: ['mongoDB', 'Node.js', 'Express', 'Bash'],
     description: 'An API and CLI to streamline tracking one’s tasks throughout the day.',
   },
   {
     name: 'TUNER.',
-    link: 'https://github.com/carloferrer/TUNER.',
     tech: ['Spotify API', 'React', 'Express', 'SASS', 'Knex.js', 'PostgreSQL'],
     description: 'Social medium to analyze musical compatibility between users.  It can suggest new music to encourage getting to know other users.',
   }
