@@ -8,23 +8,33 @@
   }
 
   .item {
+    position: relative;
+
     hgroup {
       position: relative;
 
       .position {
         font-size: $size-h0;
+        margin: 0 0 0 0;
       }
 
       .employer {
+        margin: 0 0 0 0;
         font-size: $size-h1;
         color: $gray-1;
       }
 
-      .dates {
-        position: absolute;
-        top: -19%;
-        right: 0;
+      .location {
+        font-size: $size-normal;
+        margin: 2% 0 0 0;
       }
+
+    }
+
+    .dates {
+      position: absolute;
+      top: 0;
+      right: 0;
     }
 
     .duties {
