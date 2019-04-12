@@ -58,7 +58,7 @@ const employment = [
     duties: ['Mechanical design and analysis of HVAC systems for large grocery chains.'],
   },
   {
-    employer: 'GE-Hitachi Nuclear Energy Canada Inc.',
+    employer: 'GE Nuclear Energy Canada Inc.',
     position: 'Engineering Intern',
     location: 'Peterborough, ON',
     dateStart: 'May 2013',
