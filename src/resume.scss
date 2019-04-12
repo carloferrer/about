@@ -5,6 +5,7 @@ body {
   background: linear-gradient($cyan-0, $cyan-1);
 }
 
+
 .Resume {
   font-family: Comfortaa;
   color: $white;
@@ -23,7 +24,7 @@ body {
   }
 
   @media (min-width: $mobile-width) {
-    background: $white;
+    background: $gray-3;
 
     .mobile {
       display: none;
@@ -31,11 +32,14 @@ body {
 
     .desktop {
       display: flex;
+      max-width: 73em;
+      margin: auto;
       color: $black;
 
       .left {
         flex: 5;
-        margin: $side-margins;
+        padding: $side-margins;
+        background: $white;
       }
 
       .right {
