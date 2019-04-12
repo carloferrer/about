@@ -18,7 +18,13 @@
       margin: 0 0 0 0;
       font-size: $size-normal;
       font-weight: 100;
-      color: $cyan-2;
+      color: $white;
     }
+  }
+}
+
+.desktop .Education .item {
+  .discipline, .note {
+    color: $cyan-2;
   }
 }
