@@ -1,5 +1,6 @@
 @import '../../global';
 
+// Consideration for mobile by default.
 .Education {
   .header {
     @extend %header-aux;

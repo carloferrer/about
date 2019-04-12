@@ -1,5 +1,6 @@
 @import '../../global';
 
+// Consideration for mobile by default.
 .Projects {
   .header {
     @extend %header-main;
@@ -54,7 +55,6 @@
     .host {
       color: $gray-1;
     }
-
   }
 
   .tech-list {
