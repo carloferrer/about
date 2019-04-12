@@ -20,6 +20,15 @@ class Resume extends Component {
             <Section.Skills content={ content }/>
           </div>
         </div>
+        <div className="mobile">
+          <Section.Header content={ content }/>
+          <Section.Contact content={ content }/>
+          <Section.Summary content={ content }/>
+          <Section.Employment content={ content }/>
+          <Section.Projects content={ content }/>
+          <Section.Skills content={ content }/>
+          <Section.Education content={ content }/>
+        </div>
       </main>
     );
   }

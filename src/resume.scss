@@ -3,16 +3,19 @@
 .Resume {
   font-family: Comfortaa;
 
-  .desktop {
-    display: none;
-  }
-
   .list {
     padding-left: 0;
     list-style: none;
   }
 
+  .desktop {
+    display: none;
+  }
+
+
   @media (min-width: $mobile-width) {
+    .mobile { display: none; }
+
     .desktop {
       display: flex;
 
