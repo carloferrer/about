@@ -2,8 +2,6 @@
 
 .Projects {
   .header {
-    @extend %header-common;
-    font-size: $size-header;
-    color: $cyan-1;
+    @extend %header-main;
   }
 }

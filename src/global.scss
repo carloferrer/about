@@ -24,3 +24,9 @@ $size-normal: 10pt;
   text-transform: uppercase;
   text-align: center;
 }
+
+%header-main {
+  @extend %header-common;
+  font-size: $size-header;
+  color: $cyan-1;
+}
