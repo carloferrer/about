@@ -16,11 +16,11 @@
 
       a {
         text-decoration: none;
-        color: $cyan-1;
+        color: $cyan-2;
 
         .host {
           font-size: $size-small;
-          color: $gray-1;
+          color: $gray-2;
         }
       }
     }
@@ -32,7 +32,7 @@
       margin: 1% 0 0 0;
       padding-left: 0;
       white-space: nowrap;
-      color: $gray-0;
+      color: $white;
 
       .tech-item {
         margin: 0 2% 0 0;
@@ -43,6 +43,20 @@
     .description {
       font-size: $size-normal;
       text-align: justify;
+    }
+  }
+}
+
+.desktop .Projects .item {
+  .name a {
+    color: $cyan-1;
+
+    .host {
+      color: $gray-1;
+    }
+
+    .tech-list {
+      color: $gray-0;
     }
   }
 }
