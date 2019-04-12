@@ -76,7 +76,8 @@ const education = [
   {
     institution: "Queen's University",
     discipline: 'Mechanical Engineering',
-    graduationYear: '2015 (First Honours)',
+    graduationYear: '2015',
+    note: 'First Honours',
   },
 ];
 
