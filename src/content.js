@@ -18,7 +18,7 @@ const summary = [
 ];
 
 const skills = {
-  Languages: ['JavaScript', 'HTML', 'CSS/SCSS/SASS', 'Bash', 'MATLAB', 'C', 'VBA'],
+  Languages: ['JavaScript', 'HTML', 'CSS/SASS', 'Bash'],
   'Frameworks & Libraries': ['React', 'Riot', 'Node', 'Angular**', 'TypeScript**'],
   Testing: ['Mocha', 'Chai', 'Sinon'],
   Workflow: ['Git', 'GitHub', 'JIRA', 'Google Suite', 'MS Office Suite'],
