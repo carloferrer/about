@@ -2,7 +2,7 @@
 
 .Education {
   .header {
-    @extend %header-common;
+    @extend %header-aux;
   }
 
   .institution {
