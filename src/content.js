@@ -5,11 +5,11 @@ const header = {
 };
 
 const contact = {
-  email: 'thecarloferrer@gmail.com',
+  location: 'Toronto, ON (Downtown)',
   phone: '647 331 6441',
+  email: 'thecarloferrer@gmail.com',
   linkedin: 'ca.linkedin.com/in/carloferrer',
   github: 'github.com/carloferrer',
-  location: 'Toronto, ON (Downtown)',
 };
 
 const summary = [
