@@ -8,33 +8,25 @@
   }
 
   .item {
-    position: relative;
-
     hgroup {
-      position: relative;
-
       .position {
-        font-size: $size-h0;
+        font-weight: 100;
         margin: 0 0 0 0;
+        font-size: $size-h0;
       }
 
       .employer {
-        margin: 0 0 0 0;
+        font-weight: 100;
+        margin: 1% 0 0 0;
         font-size: $size-h1;
         color: $gray-1;
       }
 
       .location {
+        margin: 1% 0 0 0;
         font-size: $size-normal;
-        margin: 2% 0 0 0;
       }
 
-    }
-
-    .dates {
-      position: absolute;
-      top: 0;
-      right: 0;
     }
 
     .duties {

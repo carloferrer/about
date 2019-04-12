@@ -9,10 +9,11 @@ class Employment extends Component {
       return <li className="item" key={ `employmentParent_${ parentIndex }` }>
         <hgroup>
           <h3 className="position">{ employment.position }</h3>
-          <h4 className="employer">{ employment.employer }</h4>
-          <h5 className="location">{ employment.location }</h5>
+          <h4 className="employer">
+            { employment.employer }
+          </h4>
+          <h5 className="location">{ employment.location } | <span className="dates">{ employment.dateStart} - { employment.dateEnd }</span></h5>
         </hgroup>
-        <h5 className="dates">{ employment.dateStart} - { employment.dateEnd }</h5>
         <div className="duties">{ dutyItems }</div>
       </li>
     });
