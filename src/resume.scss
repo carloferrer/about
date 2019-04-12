@@ -23,7 +23,7 @@ body {
   }
 
   @media (min-width: $mobile-width) {
-    background: $white;
+    background: $gray-3;
 
     .mobile {
       display: none;
@@ -31,11 +31,14 @@ body {
 
     .desktop {
       display: flex;
+      max-width: 73em;
+      margin: auto;
       color: $black;
 
       .left {
         flex: 5;
-        margin: $side-margins;
+        padding: $side-margins;
+        background: $white;
       }
 
       .right {
