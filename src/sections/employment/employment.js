@@ -12,7 +12,7 @@ class Employment extends Component {
           <h4 className="employer">
             { employment.employer }
           </h4>
-          <h5 className="location">{ employment.location } | <span className="dates">{ employment.dateStart} - { employment.dateEnd }</span></h5>
+          <h5 className="location">{ employment.location } | <span className="dates">{ employment.dateStart } - { employment.dateEnd }</span></h5>
         </hgroup>
         <div className="duties">{ dutyItems }</div>
       </li>
