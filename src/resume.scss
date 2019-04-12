@@ -8,8 +8,8 @@
   }
 
   .list {
-    list-style: none;
     padding-left: 0;
+    list-style: none;
   }
 
   @media (min-width: $mobile-width) {
@@ -18,12 +18,12 @@
 
       .left {
         flex: 5;
-        margin: 0 5% 0 5%;
+        margin: $side-margins;
       }
 
       .right {
         flex: 3;
-        padding: 0 2% 0 2%;
+        padding: $side-margins;
         background: $cyan-0;
         color: $white;
       }

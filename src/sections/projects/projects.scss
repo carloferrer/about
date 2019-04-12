@@ -7,28 +7,41 @@
 
   .item {
     position: relative;
+    margin: 0 0 10% 0;
 
     .name {
-      font-weight: 100;
-      font-size: $size-h0;
       margin: 0 0 0 0;
+      font-size: $size-h0;
+      font-weight: 100;
+
+      a {
+        text-decoration: none;
+        color: $cyan-1;
+
+        .host {
+          font-size: $size-small;
+          color: $gray-1;
+        }
+      }
     }
 
     .tech-list {
       display: flex;
       list-style: none;
-      padding-left: 0;
       margin: 1% 0 0 0;
-      color: $gray-1;
+      padding-left: 0;
+      white-space: nowrap;
+      color: $gray-0;
 
       .tech-item {
+        margin: 0 2% 0 0;
         font-size: $size-normal;
-        margin: 0 1% 0 0;
       }
     }
 
     .description {
       font-size: $size-normal;
+      text-align: justify;
     }
   }
 }

@@ -6,17 +6,19 @@
   }
 
   .item {
+    margin: 0 0 10% 0;
+
     hgroup {
       .position {
-        font-weight: 100;
         margin: 0 0 0 0;
         font-size: $size-h0;
+        font-weight: 100;
       }
 
       .employer {
-        font-weight: 100;
         margin: 1% 0 0 0;
         font-size: $size-h1;
+        font-weight: 100;
         color: $gray-1;
       }
 
@@ -25,10 +27,15 @@
         font-size: $size-normal;
       }
 
+      .dates {
+        font-weight: 100;
+        color: $gray-1;
+      }
     }
 
     .duties {
       font-size: $size-normal;
+      text-align: justify;
     }
   }
 }

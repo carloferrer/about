@@ -47,7 +47,7 @@ const employment = [
     location: 'Toronto, ON',
     dateStart: 'Nov 2017',
     dateEnd: 'Feb 2019',
-    duties: ['Development and maintenance of the retail experience for an American corporation in the top 10 of the Fortune 500.', 'Resident expert in the implementation of their user-analytics tracking and loyalty program.', 'Acting team lead and technical consultant for the loyalty program team; I managed multiple developers as well as the relationship between the client GroupBy'],
+    duties: ['Development and maintenance of the retail experience for a corporation in the top 10 of the Fortune 500.', 'Resident expert in the implementation of their user-analytics tracking and loyalty program.', 'Acting team lead and technical consultant for the loyalty program team; I managed multiple developers as well as the relationship between the client and GroupBy.'],
   },
   {
     employer: 'Consolidated Energy Solutions Inc.',
@@ -77,26 +77,23 @@ const education = [
     institution: "Queen's University",
     discipline: 'Mechanical Engineering',
     graduationYear: '2015',
-    note: 'First Honours',
+    note: 'First Class Honours',
   },
 ];
 
 const projects = [
   {
     name: 'about',
-    link: 'https://github.com/carloferrer/about',
     tech: ['React', 'SCSS', 'gh-pages'],
-    description: 'A creative approach toward the distribution and viewing of my own resume.',
+    description: 'This project!  A creative approach toward the distribution and viewing of my own resume.',
   },
   {
     name: 'fast_tracker',
-    link: 'https://github.com/carloferrer/fast_tracker',
     tech: ['mongoDB', 'Node.js', 'Express', 'Bash'],
     description: 'An API and CLI to streamline tracking one’s tasks throughout the day.',
   },
   {
     name: 'TUNER.',
-    link: 'https://github.com/carloferrer/TUNER.',
     tech: ['Spotify API', 'React', 'Express', 'SASS', 'Knex.js', 'PostgreSQL'],
     description: 'Social medium to analyze musical compatibility between users.  It can suggest new music to encourage getting to know other users.',
   }

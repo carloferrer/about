@@ -7,19 +7,20 @@
 
   .skill-item {
     .type {
+      margin: 0 0 0 0;
       font-size: $size-normal;
-      margin: 10% 0 0 0;
     }
 
     .type-list {
       display: flex;
       flex-wrap: wrap;
+      margin: 0 0 10% 0;
       padding: 0 0 0 0;
       list-style: none;
       font-size: $size-normal;
 
       .type-item {
-        margin: 0 4% 0 0;
+        margin: 0 2% 0 0;
       }
     }
   }
