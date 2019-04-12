@@ -6,7 +6,7 @@ class Skills extends Component {
     const { skills } = this.props.content;
 
     const skillsItems = Object.keys(skills).map((type, parentIndex) => {
-      const typeList = skills[type].map((item, childIndex) => <li className="type-item" key={ `skillChild_${ childIndex }` }>{ item }</li>);
+      const typeList = skills[type].map((item, childIndex) => <li className="type-item" key={ `skillChild_${ childIndex }` }>• { item }</li>);
 
       return <li className="skill-item" key={ `skillParent_${ parentIndex }` }>
         <h3 className="type">{ type }:</h3>

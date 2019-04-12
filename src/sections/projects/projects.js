@@ -4,7 +4,7 @@ import './projects.scss';
 class Projects extends Component {
   render() {
     const projectsItems = this.props.content.projects.map((project, parentIndex) => {
-      const techItems = project.tech.map((tech, childIndex) => <li className="tech-item" key={ `projectChild_${ childIndex }` }>{ tech }</li>);
+      const techItems = project.tech.map((tech, childIndex) => <li className="tech-item" key={ `projectChild_${ childIndex }` }>• { tech }</li>);
 
       return <li className="item" key={ `projectParent_${ parentIndex }` }>
         <h3 className="name">{ project.name }</h3>
