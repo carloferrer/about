@@ -3,6 +3,7 @@
 .Header {
   .name {
     @extend %header-common;
+    margin: 10% 0 0 0;
     font-size: $size-name;
 
     .first {
@@ -17,6 +18,7 @@
 
   .title {
     @extend %header-common;
+    margin: 2% 0 0 0;
     font-size: $size-header;
   }
 }
