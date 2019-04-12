@@ -9,7 +9,7 @@ class Skills extends Component {
       const typeList = skills[type].map((item, childIndex) => <li className="type-item" key={ `skillChild_${ childIndex }` }>{ item }</li>);
 
       return <li className="skill-item" key={ `skillParent_${ parentIndex }` }>
-        <h3 className="type">{ type }</h3>
+        <h3 className="type">{ type }:</h3>
         <ul className="type-list">{ typeList }</ul>
       </li>
     });
