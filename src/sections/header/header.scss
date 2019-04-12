@@ -1,5 +1,6 @@
 @import '../../global';
 
+// Consideration for mobile by default.
 .Header {
   .name {
     @extend %header-common;
@@ -8,11 +9,11 @@
 
     .first {
       font-style: normal;
-      color: $cyan-1;
+      color: $cyan-2;
     }
 
     .last {
-      color: $gray-0;
+      color: $gray-1;
     }
   }
 
@@ -20,5 +21,15 @@
     @extend %header-common;
     margin: 2% 0 0 0;
     font-size: $size-header;
+  }
+}
+
+.desktop .Header .name {
+  .first {
+    color: $cyan-1;
+  }
+
+  .last {
+    color: $gray-0;
   }
 }

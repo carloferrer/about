@@ -1,5 +1,6 @@
 @import '../../global';
 
+// Consideration for mobile by default.
 .Skills {
   .header {
     @extend %header-aux;
@@ -27,6 +28,10 @@
 
   .disclaimer {
     font-size: $size-normal;
-    color: $gray-1;
+    color: $gray-2;
   }
+}
+
+.desktop .Skills .disclaimer {
+  color: $gray-2;
 }

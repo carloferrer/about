@@ -1,20 +1,37 @@
 @import 'global';
 
+// Consideration for mobile by default.
+body {
+  background: linear-gradient($cyan-0, $cyan-1);
+}
+
 .Resume {
   font-family: Comfortaa;
-
-  .desktop {
-    display: none;
-  }
+  color: $white;
 
   .list {
     padding-left: 0;
     list-style: none;
   }
 
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    margin: $side-margins;
+  }
+
   @media (min-width: $mobile-width) {
+    background: $white;
+
+    .mobile {
+      display: none;
+    }
+
     .desktop {
       display: flex;
+      color: $black;
 
       .left {
         flex: 5;
@@ -24,7 +41,7 @@
       .right {
         flex: 3;
         padding: $side-margins;
-        background: $cyan-0;
+        background: linear-gradient($cyan-0, $cyan-1);
         color: $white;
       }
     }

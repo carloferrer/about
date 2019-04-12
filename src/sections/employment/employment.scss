@@ -1,5 +1,6 @@
 @import '../../global';
 
+// Consideration for mobile by default.
 .Employment {
   .header {
     @extend %header-main;
@@ -19,7 +20,7 @@
         margin: 1% 0 0 0;
         font-size: $size-h1;
         font-weight: 100;
-        color: $gray-1;
+        color: $gray-2;
       }
 
       .location {
@@ -29,7 +30,7 @@
 
       .dates {
         font-weight: 100;
-        color: $gray-1;
+        color: $gray-2;
       }
     }
 
@@ -37,5 +38,11 @@
       font-size: $size-normal;
       text-align: justify;
     }
+  }
+}
+
+.desktop .Employment .item {
+  .employer, .dates {
+    color: $gray-1;
   }
 }

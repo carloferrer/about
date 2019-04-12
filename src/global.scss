@@ -19,7 +19,7 @@ $size-h2: 12pt;
 $size-normal: 10pt;
 $size-small: 9pt;
 
-$mobile-width: 480px;
+$mobile-width: 768px;
 
 $side-margins: 0 5% 0 5%;
 
@@ -29,19 +29,31 @@ $side-margins: 0 5% 0 5%;
   text-align: center;
 }
 
+%header-spacing {
+  margin: 15% 0 0 0;
+  padding: 0 0 5% 0;
+}
+
 %header-aux {
   @extend %header-common;
-  margin: 25% 0 0 0;
-  padding: 0 0 5% 0;
-  font-size: $size-h0;
+  @extend %header-spacing;
+  font-size: $size-header;
   border-bottom: solid 1pt;
+
+  @media (min-width: $mobile-width) {
+    margin: 25% 0 0 0;
+    font-size: $size-h0;
+  }
 }
 
 %header-main {
   @extend %header-common;
-  margin: 10% 0 0 0;
-  padding: 0 0 5% 0;
+  @extend %header-spacing;
   font-size: $size-header;
-  color: $cyan-1;
   border-bottom: solid 1pt;
+
+  @media (min-width: $mobile-width) {
+    margin: 10% 0 0 0;
+    color: $cyan-1;
+  }
 }
