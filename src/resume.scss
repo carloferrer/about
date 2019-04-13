@@ -1,52 +1,140 @@
 @import 'global';
 
-// Consideration for mobile by default.
-body {
-  background: linear-gradient($cyan-0, $cyan-1);
+// // Consideration for mobile by default.
+// body {
+//   background: linear-gradient($cyan-0, $cyan-1);
+// }
+
+// .Resume {
+//   font-family: Comfortaa;
+//   color: $white;
+
+//   .list {
+//     padding-left: 0;
+//     list-style: none;
+//   }
+
+//   .desktop {
+//     display: none;
+//   }
+
+//   .mobile {
+//     margin: $side-margins;
+//   }
+
+//   @media (min-width: $mobile-width) {
+//     background: $gray-3;
+
+//     .mobile {
+//       display: none;
+//     }
+
+//     .desktop {
+//       display: flex;
+//       max-width: 73em;
+//       margin: auto;
+//       color: $black;
+
+//       .left {
+//         flex: 5;
+//         padding: $side-margins;
+//         background: $white;
+//       }
+
+//       .right {
+//         flex: 3;
+//         padding: $side-margins;
+//         background: linear-gradient($cyan-0, $cyan-1);
+//         color: $white;
+//       }
+//     }
+//   }
+// }
+.root { 
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  color: white;
+  font-size: 30px;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
+
 }
 
-.Resume {
-  font-family: Comfortaa;
-  color: $white;
+.left {
+  width: 70%;
+  display: flex;
+}
 
-  .list {
-    padding-left: 0;
-    list-style: none;
+.right {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  >* {
+   height: 50%;
   }
 
-  .desktop {
-    display: none;
-  }
+}
 
-  .mobile {
-    margin: $side-margins;
-  }
-
-  @media (min-width: $mobile-width) {
-    background: $gray-3;
-
-    .mobile {
-      display: none;
-    }
-
-    .desktop {
+.left, .right {
+    >* {
+      width: 100%;
       display: flex;
-      max-width: 73em;
-      margin: auto;
-      color: $black;
+      justify-content: center;
+      align-items: center;
+    }
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+}
 
-      .left {
-        flex: 5;
-        padding: $side-margins;
-        background: $white;
-      }
+@media (max-width: $mobile-width) {
+  .left-top {
+     order: 2;
+  }
 
-      .right {
-        flex: 3;
-        padding: $side-margins;
-        background: linear-gradient($cyan-0, $cyan-1);
-        color: $white;
-      }
+  .left-bottom {
+      order: 3;
+  }
+
+  .right-top {
+      order: 1;
+  }
+
+  .right-bottom {
+      order: 4;
+      display: flex;
+      flex-direction: column-reverse
+  }
+
+  .left-top, .left-bottom, .right-top, .right-bottom {
+    >*{
+      height: 200px;
     }
   }
+}
+
+.one {
+  background: #405281;
+}
+.two {
+  background: #344163;
+}
+.three {
+  background: #235b79;
+}
+
+.four {
+  background: #70abaf;
+
+}
+.five {
+  background: #cadfea;
+
+}
+
+.six {
+  background: #a8b7c0;
 }
