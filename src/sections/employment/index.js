@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './employment.scss';
+import './index.scss';
 
 class Employment extends Component {
   render() {
