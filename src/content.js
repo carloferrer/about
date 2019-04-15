@@ -13,7 +13,7 @@ const contact = {
 };
 
 const summary = [
-  'With a desire for forming creative solutions that exceed the pace of the mechanical engineering industry, the transition into the tech industry was only natural.',
+  'With a desire for forming creative solutions that exceed the pace of the mechanical engineering industry, my transition into the tech industry was only natural.',
   "I'm a proven quick learner, natural problem solver, and obsessed with optimization (e.g., DRY code)."
 ];
 
@@ -63,7 +63,7 @@ const employment = [
     location: 'Peterborough, ON',
     dateStart: 'May 2013',
     dateEnd: 'Aug 2014',
-    duties: ['Mechanical design and analysis for various equipment in operation at the OPG Darlington the Bruce Power Nuclear Generating Stations.'],
+    duties: ['Mechanical design and analysis for various equipment in operation at the OPG Darlington and Bruce Power Nuclear Generating Stations.'],
   }
 ];
 
