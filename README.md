@@ -1,4 +1,4 @@
-# about
+# resume
 It's my resume!  You're free to peruse the source code, though you can [check out the resultant resume here](https://carloferrer.github.io/about).
 
 ## Setup

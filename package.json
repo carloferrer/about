@@ -2,7 +2,7 @@
   "name": "about",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://carloferrer.github.io/about",
+  "homepage": "https://carloferrer.github.io/resume",
   "dependencies": {
     "node-sass": "^4.11.0",
     "react": "^16.8.6",
