@@ -9,11 +9,16 @@ class Contact extends Component {
       let innerContactNode = contact[info];
       switch (info) {
         case 'email':
-          innerContactNode = <a target="_blank" rel="noopener noreferrer" className={ info } href={ `mailto:${ contact[info] }` }>{ contact[info] }</a>;
+          innerContactNode = <React.Fragment>
+            <br/>
+            <a target="_blank" rel="noopener noreferrer" className={ info } href={ `mailto:${ contact[info] }` }>{ contact[info] }</a> (linked)
+          </React.Fragment>;
           break;
         case 'linkedin':
         case 'github':
-          innerContactNode = <a target="_blank" rel="noopener noreferrer" className={ info } href={ `https://${ contact[info] }` }>{ contact[info] }</a>;
+          innerContactNode = <React.Fragment>
+            <a target="_blank" rel="noopener noreferrer" className={ info } href={ `https://${ contact[info] }` }>{ contact[info] }</a> (linked)
+          </React.Fragment>;
           break;
         default:
           break;
