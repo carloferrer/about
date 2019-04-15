@@ -9,19 +9,22 @@ class Contact extends Component {
     const contactItems = Object.keys(this.props.content.contact).map((info, index) => {
       const { image, string } = contact[info];
       let innerContactNode = <React.Fragment>
-        <img src={ image }/>{ string }
+        <object className="icon" type="image/svg+xml" data={ image } aria-label={ `${ info } logo` }/>
+        <span className="text">{ string }</span>
       </React.Fragment>;
       switch (info) {
         case 'email':
           innerContactNode = <React.Fragment>
             <br/>
-            <a target="_blank" rel="noopener noreferrer" className={ info } href={ `mailto:${ string }` }><img src={ image } />{ string }</a> (linked)
+            <object className="icon" data={ image } aria-label={ `${ info } logo` }/>
+            <a target="_blank" rel="noopener noreferrer" className={`text ${ info }`} href={ `mailto:${ string }` }>{ string }</a> (linked)
           </React.Fragment>;
           break;
         case 'linkedin':
         case 'github':
           innerContactNode = <React.Fragment>
-            <a target="_blank" rel="noopener noreferrer" className={ info } href={ `https://${ string }` }><img src={ image } />{ string }</a> (linked)
+            <object className="icon" data={ image } aria-label={ `${ info } logo` } />
+            <a target="_blank" rel="noopener noreferrer" className={`text ${ info }`} href={ `https://${ string }` }>{ string }</a> (linked)
           </React.Fragment>;
           break;
         default:
