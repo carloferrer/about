@@ -9,11 +9,11 @@ class Contact extends Component {
       let innerContactNode = contact[info];
       switch (info) {
         case 'email':
-          innerContactNode = <a className={ info } href={ `mailto:${ contact[info] }` }>{ contact[info] }</a>;
+          innerContactNode = <a target="_blank" className={ info } href={ `mailto:${ contact[info] }` }>{ contact[info] }</a>;
           break;
         case 'linkedin':
         case 'github':
-          innerContactNode = <a className={ info } href={ `https://${ contact[info] }` }>{ contact[info] }</a>;
+          innerContactNode = <a target="_blank" className={ info } href={ `https://${ contact[info] }` }>{ contact[info] }</a>;
           break;
         default:
           break;

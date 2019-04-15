@@ -9,7 +9,7 @@ class Projects extends Component {
       const techItems = project.tech.map((tech, childIndex) => <li className="tech-item" key={ `projectChild_${ childIndex }` }>• { tech }</li>);
 
       return <li className="item" key={ `projectParent_${ parentIndex }` }>
-        <h3 className="name"><a href={ `https://${ contact.github }/${ project.name }` }>{ project.name }<br/><span className="host">{ contact.github }/{ project.name }</span></a></h3>
+        <h3 className="name"><a target="_blank" href={ `https://${ contact.github }/${ project.name }` }>{ project.name }<br/><span className="host">{ contact.github }/{ project.name }</span></a></h3>
         <ul className="tech-list">{ techItems }</ul>
         <p className="description">{ project.description }</p>
       </li>
