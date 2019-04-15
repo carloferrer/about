@@ -18,6 +18,7 @@
       a {
         text-decoration: none;
         color: $cyan-2;
+        @include neat-link($cyan-dark);
 
         .host {
           font-size: $size-small;
@@ -51,12 +52,11 @@
 .desktop .Projects .item {
   .name a {
     color: $cyan-1;
+    @include neat-link($gray-3);
 
     .host {
       color: $gray-0;
     }
-
-    @include neat-link($gray-3);
   }
 
   .tech-list {
