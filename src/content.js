@@ -1,3 +1,5 @@
+import image from './assets/contact';
+
 const header = {
   firstName: 'Carlo',
   lastName: 'Ferrer',
@@ -6,23 +8,23 @@ const header = {
 
 const contact = {
   location: {
-    image: '../assets/pin.svg',
+    image: image.pin,
     string: 'Toronto, ON (Downtown)',
   },
   phone: {
-    image: '../assets/phone.svg',
+    image: image.phone,
     string: '647 331 6441',
   },
   email: {
-    image: '../assets/gmail.svg',
+    image: image.gmail,
     string: 'thecarloferrer@gmail.com',
   },
   linkedin: {
-    image: '../assets/linkedin.svg',
+    image: image.linkedin,
     string: 'ca.linkedin.com/in/carloferrer',
   },
   github: {
-    image: '../assets/github.svg',
+    image: image.github,
     string: 'github.com/carloferrer',
   },
 };
