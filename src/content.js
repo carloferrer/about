@@ -5,11 +5,26 @@ const header = {
 };
 
 const contact = {
-  location: 'Toronto, ON (Downtown)',
-  phone: '647 331 6441',
-  email: 'thecarloferrer@gmail.com',
-  linkedin: 'ca.linkedin.com/in/carloferrer',
-  github: 'github.com/carloferrer',
+  location: {
+    image: '../assets/pin.svg',
+    string: 'Toronto, ON (Downtown)',
+  },
+  phone: {
+    image: '../assets/phone.svg',
+    string: '647 331 6441',
+  },
+  email: {
+    image: '../assets/gmail.svg',
+    string: 'thecarloferrer@gmail.com',
+  },
+  linkedin: {
+    image: '../assets/linkedin.svg',
+    string: 'ca.linkedin.com/in/carloferrer',
+  },
+  github: {
+    image: '../assets/github.svg',
+    string: 'github.com/carloferrer',
+  },
 };
 
 const summary = [

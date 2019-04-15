@@ -5,19 +5,22 @@ class Contact extends Component {
   render() {
     // TODO: write better code
     const { contact } = this.props.content;
+
     const contactItems = Object.keys(this.props.content.contact).map((info, index) => {
-      let innerContactNode = contact[info];
+      let innerContactNode = contact[info].string;
       switch (info) {
         case 'email':
+          const email = contact[info].string;
           innerContactNode = <React.Fragment>
             <br/>
-            <a target="_blank" rel="noopener noreferrer" className={ info } href={ `mailto:${ contact[info] }` }>{ contact[info] }</a> (linked)
+            <a target="_blank" rel="noopener noreferrer" className={ info } href={ `mailto:${ email }` }>{ email }</a> (linked)
           </React.Fragment>;
           break;
         case 'linkedin':
         case 'github':
+          const link = contact[info].string;
           innerContactNode = <React.Fragment>
-            <a target="_blank" rel="noopener noreferrer" className={ info } href={ `https://${ contact[info] }` }>{ contact[info] }</a> (linked)
+            <a target="_blank" rel="noopener noreferrer" className={ info } href={ `https://${ link }` }>{ link }</a> (linked)
           </React.Fragment>;
           break;
         default:
