@@ -58,3 +58,17 @@ $side-margins: 0 5% 0 5%;
     color: $cyan-1;
   }
 }
+
+@mixin neat-link($background) {
+  background:
+    linear-gradient(
+      to right, $background, $background
+    );
+  background-repeat: repeat-y;
+  background-size: 0 0;
+  transition: background-size .8s;
+
+  &:hover {
+    background-size: 100% 100%;
+  }
+}
