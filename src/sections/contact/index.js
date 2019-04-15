@@ -17,14 +17,16 @@ class Contact extends Component {
           innerContactNode = <React.Fragment>
             <br/>
             <object className="icon" data={ image } aria-label={ `${ info } logo` }/>
-            <a target="_blank" rel="noopener noreferrer" className={`text ${ info }`} href={ `mailto:${ string }` }>{ string }</a> (linked)
+            <a target="_blank" rel="noopener noreferrer" className={`text ${ info }`} href={ `mailto:${ string }` }>{ string }</a>
+            <span className="text"> (linked)</span>
           </React.Fragment>;
           break;
         case 'linkedin':
         case 'github':
           innerContactNode = <React.Fragment>
             <object className="icon" data={ image } aria-label={ `${ info } logo` } />
-            <a target="_blank" rel="noopener noreferrer" className={`text ${ info }`} href={ `https://${ string }` }>{ string }</a> (linked)
+            <a target="_blank" rel="noopener noreferrer" className={`text ${ info }`} href={ `https://${ string }` }>{ string }</a>
+            <span className="text"> (linked)</span>
           </React.Fragment>;
           break;
         default:
