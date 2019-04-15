@@ -12,25 +12,27 @@ class Contact extends Component {
         <object className="icon" type="image/svg+xml" data={ image } aria-label={ `${ info } logo` }/>
         <span className="text">{ string }</span>
       </React.Fragment>;
-      switch (info) {
-        case 'email':
-          innerContactNode = <React.Fragment>
-            <br/>
-            <object className="icon" data={ image } aria-label={ `${ info } logo` }/>
-            <a target="_blank" rel="noopener noreferrer" className={`text ${ info }`} href={ `mailto:${ string }` }>{ string }</a>
-            <span className="text"> (linked)</span>
-          </React.Fragment>;
-          break;
-        case 'linkedin':
-        case 'github':
-          innerContactNode = <React.Fragment>
-            <object className="icon" data={ image } aria-label={ `${ info } logo` } />
-            <a target="_blank" rel="noopener noreferrer" className={`text ${ info }`} href={ `https://${ string }` }>{ string }</a>
-            <span className="text"> (linked)</span>
-          </React.Fragment>;
-          break;
-        default:
-          break;
+
+      if (info !== 'location' && info !== 'phone') {
+        let innerHref;
+
+        switch (info) {
+          case 'email':
+            innerHref = `mailto:${ string }`;
+            break;
+          case 'linkedin':
+          case 'github':
+          innerHref = `https://${ string }`;
+            break;
+          default:
+            break;
+        }
+
+        innerContactNode = <React.Fragment>
+          <object className="icon" data={ image } aria-label={ `${ info } logo` } />
+          <a target="_blank" rel="noopener noreferrer" className={`text ${ info }`} href={ innerHref }>{ string }</a>
+          <span className="text"> (linked)</span>
+        </React.Fragment>;
       }
 
       return <li className="item" key={ `contact_${ index }` }>{ innerContactNode }</li>
