@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './header.scss';
+import './index.scss';
 
 class Header extends Component {
   render() {
