@@ -55,6 +55,8 @@
     .host {
       color: $gray-0;
     }
+
+    @include neat-link($gray-3);
   }
 
   .tech-list {
