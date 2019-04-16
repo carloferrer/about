@@ -11,11 +11,23 @@
     font-size: $size-normal;
 
     .item {
-      margin: 2% 0 0 0;
+      margin: 4% 0 0 0;
+
+      .icon {
+        width: $size-normal;
+        margin: 0% 2% 0 0;
+      }
+
+      .text {
+        position: relative;
+        bottom: 1.5pt;
+      }
 
       .email, .linkedin, .github {
         text-decoration: none;
         color: $cyan-2;
+
+        @include neat-link($cyan-dark);
       }
     }
   }

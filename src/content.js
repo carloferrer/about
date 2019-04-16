@@ -1,3 +1,5 @@
+import image from './assets/contact';
+
 const header = {
   firstName: 'Carlo',
   lastName: 'Ferrer',
@@ -5,11 +7,26 @@ const header = {
 };
 
 const contact = {
-  location: 'Toronto, ON (Downtown)',
-  phone: '647 331 6441',
-  email: 'thecarloferrer@gmail.com',
-  linkedin: 'ca.linkedin.com/in/carloferrer',
-  github: 'github.com/carloferrer',
+  location: {
+    image: image.pin,
+    string: 'Toronto, ON (Downtown)',
+  },
+  phone: {
+    image: image.phone,
+    string: '647 331 6441',
+  },
+  email: {
+    image: image.gmail,
+    string: 'thecarloferrer@gmail.com',
+  },
+  linkedin: {
+    image: image.linkedin,
+    string: 'ca.linkedin.com/in/carloferrer',
+  },
+  github: {
+    image: image.github,
+    string: 'github.com/carloferrer',
+  },
 };
 
 const summary = [

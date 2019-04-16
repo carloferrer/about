@@ -8,7 +8,7 @@
 
   .item {
     position: relative;
-    margin: 0 0 10% 0;
+    margin: 0 0 12% 0;
 
     .name {
       margin: 0 0 0 0;
@@ -18,6 +18,7 @@
       a {
         text-decoration: none;
         color: $cyan-2;
+        @include neat-link($cyan-dark);
 
         .host {
           font-size: $size-small;
@@ -51,6 +52,7 @@
 .desktop .Projects .item {
   .name a {
     color: $cyan-1;
+    @include neat-link($gray-3);
 
     .host {
       color: $gray-0;

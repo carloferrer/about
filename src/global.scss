@@ -1,3 +1,4 @@
+$cyan-dark: #0c343dff;
 $cyan-0: #134f5cff;
 $cyan-1: #45818e;
 $cyan-2: #a2c4c9;
@@ -56,5 +57,19 @@ $side-margins: 0 5% 0 5%;
   @media (min-width: $mobile-width) {
     margin: 10% 0 0 0;
     color: $cyan-1;
+  }
+}
+
+@mixin neat-link($background) {
+  background:
+    linear-gradient(
+      to right, $background, $background
+    );
+  background-repeat: repeat-y;
+  background-size: 0 0;
+  transition: background-size .8s;
+
+  &:hover {
+    background-size: 100% 100%;
   }
 }
