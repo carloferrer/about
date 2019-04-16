@@ -4,10 +4,14 @@ import content from './content';
 import './resume.scss';
 
 class Resume extends Component {
+  componentDidMount() {
+    console.log('resume height', this.resumeEl.clientHeight);
+  }
+
   render() {
     // TODO: write better code
     return (
-      <main className="Resume">
+      <main className="Resume" ref={ (el) => this.resumeEl = el }>
         <div className="desktop">
           <div className="left">
             <Section.Header content={ content }/>
