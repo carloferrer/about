@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Section from './sections';
-import Download from './download_button';
 import content from './content';
+import Download from './download_button';
 import './resume.scss';
 
 class Resume extends Component {
