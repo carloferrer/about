@@ -1,5 +1,7 @@
 import image from './assets/contact';
 
+const download = 'https://drive.google.com/uc?export=download&id=1tT3qSIVoND73DN_qFxSikPDvF2aDDAP7';
+
 const header = {
   firstName: 'Carlo',
   lastName: 'Ferrer',
@@ -117,6 +119,7 @@ const projects = [
 ];
 
 export default {
+  download,
   header,
   contact,
   summary,
