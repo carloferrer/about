@@ -2,7 +2,7 @@
 
 // Consideration for mobile by default.
 body {
-  background: linear-gradient($cyan-0, $purple-dark);
+  background: linear-gradient($background, $comment);
 }
 
 .Resume {
@@ -33,7 +33,7 @@ body {
       display: flex;
       max-width: 73em;
       margin: auto;
-      color: $black;
+      color: $background;
 
       .left {
         flex: 5;
@@ -44,7 +44,7 @@ body {
       .right {
         flex: 3;
         padding: $side-margins;
-        background: linear-gradient($cyan-0, $purple-dark);
+        background: linear-gradient($background, $comment);
         color: $white;
       }
     }
