@@ -15,15 +15,16 @@ class Resume extends Component {
             <Section.Projects content={ content }/>
           </div>
           <div className="right">
+            <Download content={ content.download }/>
             <Section.Contact content={ content }/>
             <Section.Summary content={ content }/>
             <Section.Education content={ content }/>
             <Section.Skills content={ content }/>
           </div>
         </div>
-        <Download/>
         <div className="mobile">
           <Section.Header content={ content }/>
+          <Download content={ content.download }/>
           <Section.Contact content={ content }/>
           <Section.Summary content={ content }/>
           <Section.Employment content={ content }/>

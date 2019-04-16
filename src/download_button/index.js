@@ -4,7 +4,9 @@ import './index.scss';
 class Download extends Component {
   render() {
     return (
-      <div className="Download"></div>
+      <button className="Download">
+        <a href={ this.props.content }>Download printer-friendly PDF</a>
+      </button>
     );
   }
 }
