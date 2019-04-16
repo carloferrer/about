@@ -3,7 +3,7 @@
 // Consideration for mobile by default.
 .Employment {
   .header {
-    @extend %header-main;
+    @include header-main($red);
   }
 
   .item {
