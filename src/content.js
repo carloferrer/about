@@ -112,7 +112,7 @@ const projects = [
   {
     name: 'resume',
     tech: ['React', 'SCSS', 'gh-pages'],
-    description: 'This project!  A creative approach toward the distribution and viewing of my own resume.',
+    description: 'This project!  A creative approach toward the distribution and viewing of my own resume.  Optimized for varying screen sizes (i.e., desktop and mobile).',
   },
 ];
 
