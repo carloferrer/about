@@ -1,0 +1,32 @@
+@import '../global';
+
+.Download {
+  margin: 15% 0 0 0;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  border: solid 2px $cyan-1;
+  font-size: $size-h0;
+
+  @include neat-link($cyan-dark)
+
+  .link {
+    display: block;
+    text-decoration: none;
+    color: $cyan-2;
+    padding: 5% 0 5% 0;
+
+    .text {
+      font-weight: 300;
+    }
+
+    .icon {
+      margin: 0 2% 0 0;
+      width: $size-normal;
+    }
+  }
+}
+
+.desktop .Download {
+  margin: 20% 0 0 0;
+}
