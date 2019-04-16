@@ -18,7 +18,7 @@
       a {
         text-decoration: none;
         color: $cyan-2;
-        @include neat-link($cyan-dark);
+        @include neat-link($cyan-1);
 
         .host {
           font-size: $size-small;
