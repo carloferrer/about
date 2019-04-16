@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Section from './sections';
+import Download from './download_button';
 import content from './content';
 import './resume.scss';
 
@@ -20,6 +21,7 @@ class Resume extends Component {
             <Section.Skills content={ content }/>
           </div>
         </div>
+        <Download/>
         <div className="mobile">
           <Section.Header content={ content }/>
           <Section.Contact content={ content }/>
