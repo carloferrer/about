@@ -50,6 +50,8 @@
 }
 
 .desktop .Projects .item {
+  margin: 0 0 10% 0;
+
   .name a {
     color: $cyan-1;
     @include neat-link($gray-3);
