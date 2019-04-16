@@ -4,6 +4,7 @@ import content from './content';
 import './resume.scss';
 
 class Resume extends Component {
+  // TODO: write better code
   render() {
     return (
       <main className="Resume">
