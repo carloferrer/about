@@ -1,12 +1,20 @@
 @import '../global';
 
 .Download {
-  @extend %header-common;
-  width: 100%;
-  background: none;
   margin: 15% 0 0 0;
-  padding: 5% 0 5% 0;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  border: solid 2px $cyan-1;
+  background: none;
   font-size: $size-h1;
-  color: $cyan-2;
-  border: solid 1px $cyan-1;
+
+  @include neat-link($cyan-dark)
+
+  .link {
+    display: block;
+    text-decoration: none;
+    color: $cyan-2;
+    padding: 5% 0 5% 0;
+  }
 }

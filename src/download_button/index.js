@@ -5,7 +5,9 @@ class Download extends Component {
   render() {
     return (
       <button className="Download">
-        <a href={ this.props.content }>Download printer-friendly PDF</a>
+        <a className="link" href={ this.props.content }>
+          printer-friendly PDF
+        </a>
       </button>
     );
   }
