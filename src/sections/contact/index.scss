@@ -1,10 +1,13 @@
 @import '../../global';
 
+$contact-theme: $yellow;
+
 .Contact {
   font-style: normal;
 
   .header {
     @extend %header-aux;
+    color: $contact-theme;
   }
 
   .list {
@@ -25,9 +28,9 @@
 
       .email, .linkedin, .github {
         text-decoration: none;
-        color: $cyan-2;
+        color: $contact-theme;
 
-        @include neat-link($cyan-dark);
+        @include neat-link($comment);
       }
     }
   }
