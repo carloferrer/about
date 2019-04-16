@@ -5,6 +5,7 @@ import './resume.scss';
 
 class Resume extends Component {
   render() {
+    // TODO: write better code
     return (
       <main className="Resume">
         <div className="desktop">
