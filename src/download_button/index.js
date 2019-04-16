@@ -7,8 +7,10 @@ class Download extends Component {
     return (
       <button className="Download">
         <a className="link" href={ this.props.content }>
-          <img src={ download_icon }/>
-          printer-friendly PDF
+          <img className="icon" src={ download_icon } alt="download icon"/>
+          <span className="text">
+            printer-friendly PDF
+          </span>
         </a>
       </button>
     );

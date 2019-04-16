@@ -6,8 +6,7 @@
   text-transform: uppercase;
   text-align: center;
   border: solid 2px $cyan-1;
-  background: none;
-  font-size: $size-h1;
+  font-size: $size-h0;
 
   @include neat-link($cyan-dark)
 
@@ -16,5 +15,14 @@
     text-decoration: none;
     color: $cyan-2;
     padding: 5% 0 5% 0;
+
+    .text {
+      font-weight: 300;
+    }
+
+    .icon {
+      margin: 0 2% 0 0;
+      width: $size-normal;
+    }
   }
 }
