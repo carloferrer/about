@@ -1,9 +1,12 @@
 @import '../../global';
 
+$education-theme: $green;
+
 // Consideration for mobile by default.
 .Education {
   .header {
     @extend %header-aux;
+    color: $education-theme;
   }
 
   .item {
@@ -26,6 +29,6 @@
 
 .desktop .Education .item {
   .discipline, .note {
-    color: $cyan-2;
+    color: $foreground;
   }
 }

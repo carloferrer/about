@@ -3,7 +3,7 @@
 // Consideration for mobile by default.
 .Projects {
   .header {
-    @include header-main($orange);
+    @include header-main($projects-theme);
   }
 
   .item {
@@ -17,8 +17,8 @@
 
       a {
         text-decoration: none;
-        color: $cyan-2;
-        @include neat-link($cyan-dark);
+        color: $foreground;
+        @include neat-link($projects-theme);
 
         .host {
           font-size: $size-small;
@@ -53,8 +53,8 @@
   margin: 0 0 10% 0;
 
   .name a {
-    color: $cyan-1;
-    @include neat-link($gray-3);
+    color: $background;
+    @include neat-link($projects-theme);
 
     .host {
       color: $gray-0;

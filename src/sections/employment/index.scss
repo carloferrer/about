@@ -3,7 +3,7 @@
 // Consideration for mobile by default.
 .Employment {
   .header {
-    @include header-main($red);
+    @include header-main($employment-theme);
   }
 
   .item {
@@ -27,7 +27,7 @@
         margin: 1% 0 0 0;
         font-size: $size-normal;
       }
-
+1
       .dates {
         font-weight: 100;
         color: $gray-2;

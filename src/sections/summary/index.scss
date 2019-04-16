@@ -3,6 +3,7 @@
 .Summary {
   .header {
     @extend %header-aux;
+    color: $summary-theme;
   }
 
   .content {

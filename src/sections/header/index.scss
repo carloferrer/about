@@ -9,7 +9,7 @@
 
     .first {
       font-style: normal;
-      color: $cyan-2;
+      color: $foreground;
     }
 
     .last {
@@ -21,12 +21,13 @@
     @extend %header-common;
     margin: 2% 0 0 0;
     font-size: $size-header;
+    color:$comment;
   }
 }
 
 .desktop .Header .name {
   .first {
-    color: $cyan-1;
+    color: $background;
   }
 
   .last {

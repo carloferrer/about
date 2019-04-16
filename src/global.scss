@@ -1,10 +1,4 @@
-$purple-dark: #20124dff;
-
-$cyan-dark: #0c343dff;
-$cyan-0: #134f5cff;
-$cyan-1: #45818e;
-$cyan-2: #a2c4c9;
-
+// Generic colours
 $gray-0: #666;
 $gray-1: #888;
 $gray-2: #ccc;
@@ -25,6 +19,15 @@ $yellow: #e6db74;
 $green: #a6e22e;
 $blue: #66d9ef;
 $purple: #ae81ff;
+
+// Section theme definitions
+$contact-theme: $yellow;
+$summary-theme: $orange;
+$employment-theme: $red;
+$projects-theme: $purple;
+$skills-theme: $blue;
+$education-theme: $green;
+
 
 $size-name: 34pt;
 $size-header: 20pt;
@@ -68,10 +71,10 @@ $side-margins: 0 5% 0 5%;
   @extend %header-spacing;
   font-size: $size-header;
   border-bottom: solid 1pt;
+  color: $color;
 
   @media (min-width: $mobile-width) {
     margin: 10% 0 0 0;
-    color: $color;
   }
 }
 
