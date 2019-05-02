@@ -72,8 +72,8 @@ const employment = [
     employer: 'Consolidated Energy Solutions Inc.',
     position: 'Design Engineer (EIT)',
     location: 'Toronto, ON',
-    dateStart: 'Jul 2017',
-    dateEnd: 'Sep 2015',
+    dateStart: 'Sep 2015',
+    dateEnd: 'Jul 2017',
     duties: ['Mechanical design and analysis of HVAC systems for large grocery chains.'],
   },
   {
