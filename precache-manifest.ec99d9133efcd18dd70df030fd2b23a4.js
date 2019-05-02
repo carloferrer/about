@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/resume/static/media/gmail.36e493ea.svg"
   },
   {
-    "revision": "ec1528f0d0ad65ab861d",
+    "revision": "49d78e4ffeb26a03f39c",
     "url": "/resume/static/css/main.b569f48c.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/resume/static/media/github.cbb8fa18.svg"
   },
   {
-    "revision": "ec1528f0d0ad65ab861d",
-    "url": "/resume/static/js/main.c27fd8b8.chunk.js"
+    "revision": "49d78e4ffeb26a03f39c",
+    "url": "/resume/static/js/main.6eefab8a.chunk.js"
   },
   {
     "revision": "7ffb8d397fb36b988fc7cd330e63c88c",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/resume/static/media/download-button.7cf5449f.svg"
   },
   {
-    "revision": "06599d86647ac3c7b4a46ce293ca5516",
+    "revision": "a8879fc7f379d9a093c5c2069c8e9304",
     "url": "/resume/index.html"
   }
 ];
