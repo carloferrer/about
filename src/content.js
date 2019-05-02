@@ -1,6 +1,6 @@
 import image from './assets/contact';
 
-const download = 'https://drive.google.com/uc?export=download&id=1ePQBYcsbCiqtI5nqGWIpatpB0JWoQK4u';
+const download = 'https://drive.google.com/uc?export=download&id=12PUnwyUtQSApbG2RjlrGLDcZRFLnCkn1';
 
 const header = {
   firstName: 'Carlo',
@@ -39,7 +39,7 @@ const summary = [
 const skills = {
   Languages: ['JavaScript', 'HTML', 'CSS/SASS', 'Bash', 'Ruby**', 'Python**'],
   'Frameworks & Libraries': ['React', 'Riot', 'Node', 'Angular**', 'TypeScript**', 'Ruby on Rails**'],
-  Testing: ['Mocha', 'Chai', 'Sinon'],
+  Testing: ['Mocha', 'Chai', 'Sinon', 'RSpec**'],
   Workflow: ['Git', 'GitHub', 'JIRA', 'Google Suite', 'MS Office Suite'],
   OS: ['macOS', 'Linux (Ubuntu)', 'Windows'],
   'Databases** / Orchestration**': ['MongoDB', 'PostgreSQL', 'Docker', 'Kubernetes', 'GCP'],
