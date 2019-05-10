@@ -6,6 +6,7 @@ import './resume.scss';
 
 class Resume extends Component {
   render() {
+    // TODO: Halve mounted DOM nodes by implementing better SCSS here
     return (
       <main className="Resume">
         <div className="desktop">
